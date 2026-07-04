@@ -1,0 +1,58 @@
+{
+  "name": "FoodOrdering_Light",
+  "dataColors": ["#EA580C", "#16A34A", "#2563EB", "#7C3AED", "#DC2626", "#CA8A04", "#0891B2", "#DB2777"],
+  "foreground": "#0F172A",
+  "background": "#F8FAFC",
+  "foregroundNeutralSecondary": "#475569",
+  "foregroundNeutralTertiary": "#94A3B8",
+  "tableAccent": "#2563EB",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 0 }],
+        "border": [{ "color": { "solid": { "color": "#E2E8F0" } }, "radius": 8, "show": true }],
+        "title": [
+          { 
+            "fontColor": { "solid": { "color": "#0F172A" } }, 
+            "fontSize": 12, 
+            "fontFamily": "Segoe UI",
+            "fontWeight": "bold"
+          }
+        ],
+        "categoryAxis": [
+          {
+            "showAxisTitle": true,
+            "labelColor": { "solid": { "color": "#64748B" } },
+            "titleColor": { "solid": { "color": "#475569" } }
+          }
+        ],
+        "valueAxis": [
+          {
+            "showAxisTitle": true,
+            "labelColor": { "solid": { "color": "#64748B" } },
+            "titleColor": { "solid": { "color": "#475569" } }
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [
+          {
+            "color": { "solid": { "color": "#0F172A" } },
+            "fontSize": 28,
+            "fontFamily": "Segoe UI",
+            "fontWeight": "bold"
+          }
+        ],
+        "categoryLabels": [
+          {
+            "color": { "solid": { "color": "#475569" } },
+            "fontSize": 12,
+            "fontFamily": "Segoe UI"
+          }
+        ]
+      }
+    }
+  }
+}

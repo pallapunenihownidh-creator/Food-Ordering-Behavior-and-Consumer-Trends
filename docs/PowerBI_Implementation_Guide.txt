@@ -1,0 +1,581 @@
+
+================================================================================
+POWER BI EXECUTIVE DASHBOARD — COMPLETE IMPLEMENTATION GUIDE
+Food Ordering & Customer Behavior Analytics | FY 2025-26
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 1: DATA MODEL (Star Schema)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+【FACT TABLE: Orders】
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Order_ID (PK)        | VARCHAR   | Unique order identifier                  │
+│ Customer_ID (FK)     | VARCHAR   | Links to Customers dimension             │
+│ Restaurant_ID (FK)   | VARCHAR   | Links to Restaurants dimension           │
+│ Order_DateTime       | DATETIME  | Timestamp of order placement             │
+│ Order_Date           | DATE      | Date only (for date hierarchy)           │
+│ Order_Month          | VARCHAR   | YYYY-MM format for monthly trends        │
+│ Order_Hour           | INT       | Hour of day (0-23)                       │
+│ Day_Type             | VARCHAR   | Weekday / Weekend                        │
+│ Cuisine              | VARCHAR   | Cuisine type (Indian, Chinese, etc.)     │
+│ Meal_Type            | VARCHAR   | Breakfast, Lunch, Dinner, etc.           │
+│ Restaurant_Type      | VARCHAR   | Quick Service, Fine Dining, etc.       │
+│ City                 | VARCHAR   | Delivery city                            │
+│ Payment_Mode         | VARCHAR   | UPI, Card, Cash, etc.                  │
+│ Order_Status         | VARCHAR   | Delivered, Cancelled, Refunded         │
+│ Base_Amount          | DECIMAL   | Pre-discount order value                 │
+│ Discount             | DECIMAL   | Discount applied                         │
+│ Delivery_Fee         | DECIMAL   | Delivery charge                          │
+│ Tip_Amount           | DECIMAL   | Customer tip                             │
+│ Total_Amount         | DECIMAL   | Final payable amount (Revenue)           │
+│ Estimated_Delivery   | INT       | Estimated delivery minutes               │
+│ Actual_Delivery      | INT       | Actual delivery minutes                  │
+│ Delivery_Delay       | INT       | Difference (actual - estimated)          │
+│ Distance_km          | DECIMAL   | Delivery distance                        │
+│ Vehicle_Type         | VARCHAR   | Bike, Scooter, Car, Bicycle            │
+│ Customer_Rating      | DECIMAL   | 1-5 star rating                          │
+│ Delivery_Partner_Rating | DECIMAL | 1-5 star rating                        │
+│ Mood                 | VARCHAR   | Happy, Stressed, Celebratory, etc.     │
+│ Hunger_Level         | VARCHAR   | Low, Medium, High, Very High             │
+│ Company              | VARCHAR   | Alone, Family, Friends, etc.           │
+│ Rainy_Weather        | BOOLEAN   | Weather condition flag                   │
+│ Time_Taken_to_Order  | INT       | Minutes to complete order                │
+│ Is_Repeat_Customer   | BOOLEAN   | True if 2+ orders lifetime             │
+│ Age                  | INT       | Customer age                           │
+│ Gender               | VARCHAR   | Male, Female, Other                    │
+│ Age_Bucket           | VARCHAR   | 18-24, 25-34, 35-44, 45-54, 55+       │
+│ Is_Premium           | BOOLEAN   | Premium membership flag                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+【DIMENSION TABLE: Customers】
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Customer_ID (PK)     | VARCHAR   | Unique customer identifier             │
+│ Age                  | INT       | Customer age                             │
+│ Gender               | VARCHAR   | Male, Female, Other                    │
+│ City                 | VARCHAR   | Customer city                            │
+│ Preferred_Cuisine    | VARCHAR   | Favorite cuisine                         │
+│ Is_Premium           | BOOLEAN   | Premium member                           │
+│ Signup_Date          | DATE      | Account creation date                    │
+│ Total_Orders_Lifetime | INT       | Historical order count                  │
+│ Avg_Rating_Given     | DECIMAL   | Average rating given by customer         │
+│ Age_Bucket           | VARCHAR   | Age segmentation bucket                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+【DIMENSION TABLE: Restaurants】
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Restaurant_ID (PK)   | VARCHAR   | Unique restaurant identifier             │
+│ Restaurant_Name      | VARCHAR   | Restaurant name                          │
+│ Cuisine              | VARCHAR   | Primary cuisine                          │
+│ Restaurant_Type      | VARCHAR   | Quick Service, Fine Dining, etc.       │
+│ City                 | VARCHAR   | Restaurant location                      │
+│ Avg_Delivery_Time    | INT       | Average prep+delivery time               │
+│ Restaurant_Rating    | DECIMAL   | Average customer rating                  │
+│ Is_Active            | BOOLEAN   | Active status                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+【DIMENSION TABLE: Calendar】 (Auto-generated in Power BI)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Date (PK)            | DATE      | Calendar date                            │
+│ Year                 | INT       | e.g., 2025                               │
+│ Quarter              | VARCHAR   | Q1, Q2, Q3, Q4                           │
+│ Month                | VARCHAR   | January, February, etc.                │
+│ MonthNum             | INT       | 1-12                                     │
+│ Week                 | INT       | Week number                              │
+│ Day                  | INT       | Day of month                             │
+│ DayName              | VARCHAR   | Monday, Tuesday, etc.                  │
+│ DayOfWeek            | INT       | 1-7                                      │
+│ IsWeekend            | BOOLEAN   | Saturday/Sunday flag                     │
+│ FiscalYear           | INT       | Custom fiscal year                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+【RELATIONSHIPS】
+• Orders[Customer_ID]  →  Customers[Customer_ID]  (Many-to-One)
+• Orders[Restaurant_ID] → Restaurants[Restaurant_ID] (Many-to-One)
+• Orders[Order_Date]    → Calendar[Date]            (Many-to-One)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 2: DAX MEASURES LIBRARY (45 Measures)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+【SECTION A: CORE KPIs】
+
+1. Total Orders
+   Total Orders = COUNTROWS('Orders')
+
+2. Total Sales
+   Total Sales = SUM('Orders'[Total_Amount])
+
+3. AOV (Average Order Value)
+   AOV = DIVIDE([Total Sales], [Total Orders], 0)
+
+4. Repeat Customer Rate
+   Repeat Rate = 
+   VAR TotalCustomers = DISTINCTCOUNT('Orders'[Customer_ID])
+   VAR RepeatCustomers = CALCULATE(DISTINCTCOUNT('Orders'[Customer_ID]), 'Orders'[Is_Repeat_Customer] = TRUE)
+   RETURN DIVIDE(RepeatCustomers, TotalCustomers, 0)
+
+5. Average Customer Rating
+   Avg Rating = AVERAGE('Orders'[Customer_Rating])
+
+6. Total Delivery Fees
+   Total Delivery Fees = SUM('Orders'[Delivery_Fee])
+
+7. Total Discounts
+   Total Discounts = SUM('Orders'[Discount])
+
+8. Total Tips
+   Total Tips = SUM('Orders'[Tip_Amount])
+
+【SECTION B: SALES & REVENUE】
+
+9. Sales Previous Period
+   Sales Previous Period = CALCULATE([Total Sales], DATEADD('Calendar'[Date], -1, MONTH))
+
+10. Sales Growth %
+    Sales Growth % = DIVIDE([Total Sales] - [Sales Previous Period], [Sales Previous Period], 0)
+
+11. Weekend Sales
+    Weekend Sales = CALCULATE([Total Sales], 'Orders'[Day_Type] = "Weekend")
+
+12. Weekday Sales
+    Weekday Sales = CALCULATE([Total Sales], 'Orders'[Day_Type] = "Weekday")
+
+13. Revenue per Customer
+    Revenue per Customer = DIVIDE([Total Sales], DISTINCTCOUNT('Orders'[Customer_ID]), 0)
+
+14. Premium Revenue
+    Premium Revenue = CALCULATE([Total Sales], 'Orders'[Is_Premium] = TRUE)
+
+15. Premium Revenue %
+    Premium Revenue % = DIVIDE([Premium Revenue], [Total Sales], 0)
+
+【SECTION C: CUSTOMER BEHAVIOR】
+
+16. Total Customers
+    Total Customers = DISTINCTCOUNT('Orders'[Customer_ID])
+
+17. New Customers
+    New Customers = 
+    VAR CurrentPeriodCustomers = VALUES('Orders'[Customer_ID])
+    VAR PreviousPeriodCustomers = CALCULATE(VALUES('Orders'[Customer_ID]), DATEADD('Calendar'[Date], -1, MONTH))
+    RETURN COUNTROWS(EXCEPT(CurrentPeriodCustomers, PreviousPeriodCustomers))
+
+18. Churn Rate
+    Churn Rate = 
+    VAR AllCustomers = DISTINCTCOUNT('Customers'[Customer_ID])
+    VAR ActiveCustomers = DISTINCTCOUNT('Orders'[Customer_ID])
+    RETURN DIVIDE(AllCustomers - ActiveCustomers, AllCustomers, 0)
+
+19. Retention Rate
+    Retention Rate = 1 - [Churn Rate]
+
+20. Avg Orders per Customer
+    Avg Orders per Customer = DIVIDE([Total Orders], [Total Customers], 0)
+
+21. Customer Lifetime Value (CLV)
+    CLV = [AOV] * [Avg Orders per Customer] * 2.5
+
+22. NPS Score
+    NPS Score = 
+    VAR Promoters = CALCULATE(COUNTROWS('Orders'), 'Orders'[Customer_Rating] >= 4.5)
+    VAR Detractors = CALCULATE(COUNTROWS('Orders'), 'Orders'[Customer_Rating] <= 2.5)
+    VAR TotalRespondents = COUNTROWS(FILTER('Orders', NOT(ISBLANK('Orders'[Customer_Rating]))))
+    RETURN DIVIDE(Promoters - Detractors, TotalRespondents, 0) * 100
+
+【SECTION D: RESTAURANT PERFORMANCE】
+
+23. Restaurant Orders
+    Restaurant Orders = COUNTROWS('Orders')
+
+24. Revenue per Restaurant
+    Revenue per Restaurant = DIVIDE([Total Sales], DISTINCTCOUNT('Orders'[Restaurant_ID]), 0)
+
+25. Avg Restaurant Rating
+    Avg Restaurant Rating = AVERAGE('Restaurants'[Restaurant_Rating])
+
+26. Top Cuisine by Sales
+    Top Cuisine = TOPN(1, VALUES('Orders'[Cuisine]), [Total Sales], DESC)
+
+【SECTION E: DELIVERY & OPERATIONS】
+
+27. On-Time Delivery Rate
+    On-Time Delivery % = 
+    VAR OnTime = CALCULATE(COUNTROWS('Orders'), 'Orders'[Delivery_Delay] <= 0)
+    VAR TotalDelivered = CALCULATE(COUNTROWS('Orders'), 'Orders'[Order_Status] = "Delivered")
+    RETURN DIVIDE(OnTime, TotalDelivered, 0)
+
+28. Avg Delivery Time
+    Avg Delivery Time = AVERAGE('Orders'[Actual_Delivery_Time])
+
+29. Avg Delivery Delay
+    Avg Delivery Delay = AVERAGE('Orders'[Delivery_Delay])
+
+30. Cancellation Rate
+    Cancellation Rate = 
+    VAR Cancelled = CALCULATE(COUNTROWS('Orders'), 'Orders'[Order_Status] = "Cancelled")
+    RETURN DIVIDE(Cancelled, [Total Orders], 0)
+
+31. Refund Rate
+    Refund Rate = 
+    VAR Refunded = CALCULATE(COUNTROWS('Orders'), 'Orders'[Order_Status] = "Refunded")
+    RETURN DIVIDE(Refunded, [Total Orders], 0)
+
+32. Avg Distance
+    Avg Distance = AVERAGE('Orders'[Distance_km])
+
+33. Rainy Delay Impact
+    Rainy Delay = CALCULATE(AVERAGE('Orders'[Delivery_Delay]), 'Orders'[Rainy_Weather] = TRUE)
+
+34. Normal Delay
+    Normal Delay = CALCULATE(AVERAGE('Orders'[Delivery_Delay]), 'Orders'[Rainy_Weather] = FALSE)
+
+【SECTION F: TIME ANALYTICS】
+
+35. Peak Hour Orders
+    Peak Hour Orders = MAXX(VALUES('Orders'[Order_Hour]), [Total Orders])
+
+36. Weekend Orders
+    Weekend Orders = CALCULATE([Total Orders], 'Orders'[Day_Type] = "Weekend")
+
+37. Weekday Orders
+    Weekday Orders = CALCULATE([Total Orders], 'Orders'[Day_Type] = "Weekday")
+
+38. Monthly Sales
+    Monthly Sales = CALCULATE([Total Sales], DATESMTD('Calendar'[Date]))
+
+39. YoY Growth
+    YoY Growth = 
+    VAR CurrentYear = CALCULATE([Total Sales], DATESYTD('Calendar'[Date]))
+    VAR PreviousYear = CALCULATE([Total Sales], SAMEPERIODLASTYEAR('Calendar'[Date]))
+    RETURN DIVIDE(CurrentYear - PreviousYear, PreviousYear, 0)
+
+【SECTION G: RFM SEGMENTATION】
+
+40. Recency Score
+    Recency Score = 
+    VAR LastOrderDate = MAX('Orders'[Order_Date])
+    VAR DaysSince = DATEDIFF(MAX('Customers'[Signup_Date]), LastOrderDate, DAY)
+    RETURN SWITCH(TRUE(),
+        DaysSince <= 7, 5,
+        DaysSince <= 30, 4,
+        DaysSince <= 60, 3,
+        DaysSince <= 90, 2,
+        1
+    )
+
+41. Frequency Score
+    Frequency Score = 
+    VAR OrderCount = [Total Orders]
+    RETURN SWITCH(TRUE(),
+        OrderCount >= 20, 5,
+        OrderCount >= 10, 4,
+        OrderCount >= 5, 3,
+        OrderCount >= 2, 2,
+        1
+    )
+
+42. Monetary Score
+    Monetary Score = 
+    VAR TotalSpent = [Total Sales]
+    RETURN SWITCH(TRUE(),
+        TotalSpent >= 10000, 5,
+        TotalSpent >= 5000, 4,
+        TotalSpent >= 2500, 3,
+        TotalSpent >= 1000, 2,
+        1
+    )
+
+43. Customer Segment
+    Customer Segment = 
+    VAR R = [Recency Score]
+    VAR F = [Frequency Score]
+    VAR M = [Monetary Score]
+    VAR RFM = R + F + M
+    RETURN SWITCH(TRUE(),
+        RFM >= 13, "Champions",
+        RFM >= 11, "Loyal Customers",
+        RFM >= 9, "Potential Loyalists",
+        RFM >= 7, "At Risk",
+        RFM >= 5, "Cannot Lose Them",
+        "Lost"
+    )
+
+44. Discount Efficiency
+    Discount Efficiency = DIVIDE([Total Sales], [Total Discounts], 0)
+
+45. Tip Rate
+    Tip Rate = DIVIDE([Total Tips], [Total Sales], 0)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 3: DASHBOARD LAYOUT & VISUALIZATION SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+【PAGE 1: EXECUTIVE OVERVIEW】
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  HEADER: Dashboard Title + Date Range + Last Refresh Timestamp              │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  ROW 1: KPI Cards (6 cards, 200px height each)                            │
+│  ├─ Total Orders       | Total Sales     | AOV          | Repeat Rate     │
+│  ├─ Avg Rating         | Delivery Fees   |              |                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  ROW 2: Sales Analytics (2 visuals, 350px height)                           │
+│  ├─ LEFT:  Line Chart — Monthly Sales Trend (18 months)                   │
+│  │          X: Order_Month  |  Y: Total Sales  |  Color: #F97316          │
+│  ├─ RIGHT: Bar Chart — Cuisine-wise Sales                                 │
+│  │          X: Cuisine      |  Y: Total Sales  |  Color: Diverging       │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  ROW 3: Customer & Restaurant (2 visuals, 400px height)                   │
+│  ├─ LEFT:  Matrix — Customer Behavior Matrix                               │
+│  │          Rows: Mood  |  Columns: AOV, Repeat%, Rating                   │
+│  ├─ RIGHT: Bar Chart — Top 10 Restaurants by Revenue                      │
+│  │          Y: Restaurant_Name  |  X: Total Sales  |  Data bars + Rating  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  ROW 4: Operations (2 visuals, 400px height)                            │
+│  ├─ LEFT:  Donut Chart — On-Time Delivery % + KPIs side panel              │
+│  ├─ RIGHT: Heat Map — Order Patterns (Hour vs Day Type)                    │
+│  │          X: Order_Hour  |  Y: Day_Type  |  Color saturation: Order count │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  ROW 5: Segmentation & Environment (2 visuals, 450px height)              │
+│  ├─ LEFT:  Bar Chart — RFM Customer Segmentation                          │
+│  │          Y: Customer Segment  |  X: % of customers  |  Color by CLV     │
+│  ├─ RIGHT: Combo — Payment Mode Pie + Weather Impact Metrics              │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  ROW 6: Geography & Filters (2 visuals, 400px height)                     │
+│  ├─ LEFT:  Multi-row Cards — City-wise Performance (Sales, Orders, Rating) │
+│  ├─ RIGHT: Slicer Panel — 10 interactive slicers (2 columns)                │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  FOOTER: Recommended Actions + Data Source Attribution                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+【VISUAL CONFIGURATION DETAILS】
+
+1. KPI Cards
+   • Format: Card visual with conditional formatting
+   • Color coding: Green (positive), Red (negative), Neutral (gray)
+   • Trend indicator: ▲ / ▼ with percentage
+   • Font: Segoe UI Bold 28pt (value), Regular 12pt (label)
+
+2. Monthly Sales Trend (Line Chart)
+   • Type: Line and clustered column chart
+   • X-axis: Order_Month (sorted chronologically)
+   • Y-axis: Total Sales (formatted as ₹#,##0)
+   • Secondary Y: Total Orders (line overlay)
+   • Color: #F97316 (line), #3B82F6 (columns)
+   • Data labels: On for peaks only
+   • Trend line: Linear forecast (3 months)
+
+3. Cuisine-wise Sales (Bar Chart)
+   • Type: Clustered bar chart
+   • Y-axis: Cuisine (sorted by sales descending)
+   • X-axis: Total Sales
+   • Color: Conditional — Top 3 green, Bottom 3 red, Middle yellow
+   • Data labels: Inside end, formatted as ₹#.##L
+   • Reference line: Average sales line
+
+4. Customer Behavior Matrix (Matrix Visual)
+   • Type: Matrix (formerly Table)
+   • Rows: Mood, Hunger_Level, Company (drillable)
+   • Values: AOV, Repeat Rate, Avg Rating, Total Orders
+   • Conditional formatting: Color scale on AOV (green high, red low)
+   • Icons: Up/Down arrows for trend indicators
+
+5. Top 10 Restaurants (Horizontal Bar)
+   • Type: Clustered bar chart
+   • Y-axis: Restaurant_Name (sorted by revenue)
+   • X-axis: Total Sales
+   • Data bars: Gradient from #F97316 to #22C55E
+   • Tooltips: Restaurant_Rating, Avg Delivery Time, Total Orders
+
+6. Delivery Efficiency (Donut + KPIs)
+   • Type: Donut chart (On-Time vs Delayed)
+   • Center text: "78.5% On-Time"
+   • Side metrics: Avg Delivery Time, Avg Delay, Cancellation Rate
+   • Color: #22C55E (on-time), #EF4444 (delayed)
+
+7. Order Heatmap (Matrix with conditional formatting)
+   • Type: Matrix visual
+   • Rows: Day_Type (Weekday/Weekend)
+   • Columns: Order_Hour buckets (6-9AM, 9-12PM, etc.)
+   • Values: Total Orders
+   • Color: Heatmap gradient (white → orange → dark red)
+
+8. RFM Segmentation (Bar Chart)
+   • Type: Stacked bar chart
+   • Y-axis: Customer Segment
+   • X-axis: Count of Customers
+   • Color: Segment-specific (Champions=#22C55E, Lost=#EF4444)
+   • Data labels: Percentage of total + CLV
+
+9. Payment & Weather (Pie + Cards)
+   • Type: Pie chart (Payment_Mode)
+   • Color: UPI=#3B82F6, Card=#A855F7, Cash=#22C55E, Wallet=#F97316
+   • Side cards: Rainy vs Normal delay metrics
+
+10. City Performance (Multi-row Cards)
+    • Type: Multi-row card visual
+    • Fields: City, Total Sales, Total Orders, Avg Rating
+    • Layout: 4 columns × 2 rows
+    • Conditional formatting: Sales > ₹10L = green highlight
+
+11. Slicer Panel (10 slicers)
+    • Layout: 2 columns × 5 rows
+    • Style: Dropdown (single select) + Multi-select buttons
+    • Sync across all pages: Yes
+    • Items: City, Cuisine, Meal Type, Restaurant Type, Day Type, 
+             Order Time, Discount, Repeat, Rainy Weather, Age Bucket
+
+【PAGE 2: CUSTOMER DEEP DIVE】 (Optional drill-through)
+• Customer RFM scatter plot (Recency vs Frequency, bubble size = Monetary)
+• Customer journey funnel (Signup → First Order → Repeat → Premium)
+• Cohort retention analysis (Monthly cohorts)
+• CLV distribution histogram
+
+【PAGE 3: RESTAURANT PERFORMANCE】 (Optional drill-through)
+• Restaurant scorecard (Revenue, Orders, Rating, Avg Delivery Time)
+• Cuisine performance treemap
+• Restaurant type comparison (Box plot)
+• Underperforming restaurant alert table
+
+【PAGE 4: OPERATIONAL EFFICIENCY】 (Optional drill-through)
+• Delivery partner performance ranking
+• Delay root cause analysis (Weather, Distance, Hour, Vehicle)
+• Cancellation reason breakdown
+• Real-time delivery tracker simulation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 4: DESIGN SYSTEM & THEME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+【COLOR PALETTE】
+Background:     #0F172A (Slate 900) — Main canvas
+Card Background: #1E293B (Slate 800) — Visual containers
+Card Border:     #334155 (Slate 700) — Subtle separation
+Primary Text:    #F8FAFC (Slate 50)  — Headlines, values
+Secondary Text:  #94A3B8 (Slate 400) — Labels, descriptions
+Muted Text:      #64748B (Slate 500) — Axis labels, gridlines
+
+Accent Colors:
+  Orange (#F97316)  — Primary metric, Sales, Orders
+  Green (#22C55E)   — Positive trend, On-time, Growth
+  Blue (#3B82F6)    — Secondary metric, Customers, UPI
+  Purple (#A855F7)  — Premium, Repeat customers
+  Red (#EF4444)     — Negative, Delay, Cancellation
+  Yellow (#EAB308)  — Warning, Rating, At-risk
+
+【TYPOGRAPHY】
+• Font Family: Segoe UI (system default)
+• Dashboard Title: 24pt, Bold, #F8FAFC
+• Section Headers: 14pt, Bold, #94A3B8
+• KPI Values: 28pt, Bold, #F8FAFC
+• KPI Labels: 12pt, Regular, #94A3B8
+• Chart Titles: 12pt, Semibold, #F8FAFC
+• Axis Labels: 10pt, Regular, #64748B
+• Data Labels: 10pt, Semibold, #F8FAFC
+
+【LAYOUT PRINCIPLES】
+• Grid: 24-column fluid grid
+• Card spacing: 16px gap between visuals
+• Padding: 24px inside cards, 16px page margins
+• Border radius: 8px on all cards
+• Shadows: None (flat design, border-based separation)
+• Responsiveness: Desktop-first (1920×1080), tablet (1024×768)
+
+【CONDITIONAL FORMATTING RULES】
+• Sales Growth: >10% Green, 0-10% Yellow, <0% Red
+• Rating: ≥4.5 Green, 3.5-4.4 Yellow, <3.5 Red
+• Delivery Delay: ≤0 Green, 0-5 Yellow, >5 Red
+• On-Time %: ≥90% Green, 80-89% Yellow, <80% Red
+• Cancellation: ≤5% Green, 5-10% Yellow, >10% Red
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 5: INTERACTIVITY & USER EXPERIENCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+【CROSS-FILTERING & DRILL-THROUGH】
+• Click any city → Filter all visuals to that city
+• Click any cuisine → Drill to Restaurant Performance page
+• Click customer segment → Drill to Customer Deep Dive page
+• Right-click restaurant → See menu performance (if available)
+
+【BOOKMARKS & BUTTONS】
+• "Reset All" button — Clears all slicers
+• "Export to PDF" button — Generates executive summary
+• "Full Screen" button — Hides chrome for presentations
+• "Dark/Light Mode" toggle — Theme switcher
+
+【TOOLTIPS】
+• Custom tooltip pages for each major visual
+• Rich context: Trend sparkline, comparison to average, % of total
+• Restaurant tooltip: Photo, rating, delivery time, top dishes
+
+【MOBILE LAYOUT】
+• Phone: Single column, stacked KPIs, simplified charts
+• Tablet: 2-column grid, touch-optimized slicers
+• Desktop: Full layout as designed
+
+【PERFORMANCE OPTIMIZATION】
+• Import mode (not DirectQuery) for <1M rows
+• Aggregated tables for high-level visuals
+• Disable auto date/time for Calendar table
+• Reduce cardinality on slicers (max 1000 items)
+• Use Field parameters for dynamic axis switching
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 6: BUSINESS QUESTIONS ANSWERED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q1: How is the business performing?
+→ KPI Cards show Total Orders (5,000), Sales (₹63.37L), AOV (₹1,267)
+→ Monthly trend shows consistent 18% YoY growth
+→ Weekend sales contribute 35% of total revenue
+
+Q2: Who are the most valuable customers?
+→ RFM Segmentation: 18% Champions (₹15.2K CLV), 24% Loyal
+→ Premium customers drive 22% of revenue despite being 15% of base
+→ Celebratory mood customers have highest AOV (₹1,680)
+
+Q3: Which restaurants generate highest revenue?
+→ Top 10 chart: Biryani House Express (₹4.2L), Dragon Wok (₹3.8L)
+→ Indian cuisine dominates with 29% of total sales
+→ Quick Service restaurants have 40% higher order frequency
+
+Q4: Which food categories are most popular?
+→ Cuisine bar chart: Indian > Chinese > Italian > South Indian
+→ Dinner accounts for 35% of all orders
+→ Italian cuisine has highest AOV (₹1,450) but lower volume
+
+Q5: What are customer ordering patterns?
+→ Heatmap: Peak hours 12-2PM (lunch) and 7-9PM (dinner)
+→ Weekend orders spike 45% vs weekday average
+→ UPI dominates at 42% of all payments
+→ 68% of customers are repeat buyers
+
+Q6: How efficient is delivery?
+→ On-time delivery: 78.5% (target: 85%)
+→ Average delay: +4.2 minutes
+→ Rainy weather increases delay by 6.4 minutes
+→ Bike deliveries are 19% faster than car deliveries
+
+Q7: What actions should leadership take?
+→ ACTION 1: Launch targeted loyalty program for "At Risk" segment (16%)
+→ ACTION 2: Expand Quick Service footprint in Pune & Ahmedabad
+→ ACTION 3: Reduce rainy-day delays by adding 20% more delivery partners
+→ ACTION 4: Negotiate better commission with top 5 restaurants
+→ ACTION 5: Introduce "Express Delivery" premium tier for stressed customers
+→ ACTION 6: Optimize lunch-hour kitchen capacity to reduce 12-2PM delays
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 7: DATA SOURCE & REFRESH SCHEDULE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Data Source: Food Ordering Platform OLTP Database
+• ETL Tool: Azure Data Factory / Power Query
+• Refresh: Daily at 6:00 AM IST (before business hours)
+• Incremental: Last 7 days only (full refresh monthly)
+• Row-level security: City managers see only their city data
+• Gateway: On-premises data gateway for secure connection
+
+================================================================================
+END OF IMPLEMENTATION GUIDE
+================================================================================

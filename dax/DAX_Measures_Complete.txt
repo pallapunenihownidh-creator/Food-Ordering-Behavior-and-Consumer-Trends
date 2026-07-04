@@ -1,0 +1,283 @@
+
+================================================================================
+DAX MEASURES — FOOD ORDERING & CUSTOMER BEHAVIOR DASHBOARD
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: CORE KPIs (KPI Cards)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Total Orders
+   DAX:
+   Total Orders = COUNTROWS('Orders')
+
+2. Total Sales (Revenue)
+   DAX:
+   Total Sales = SUM('Orders'[Total_Amount])
+
+3. Average Order Value (AOV)
+   DAX:
+   AOV = DIVIDE([Total Sales], [Total Orders], 0)
+
+4. Repeat Customer Rate
+   DAX:
+   Repeat Rate = 
+   VAR TotalCustomers = DISTINCTCOUNT('Orders'[Customer_ID])
+   VAR RepeatCustomers = CALCULATE(DISTINCTCOUNT('Orders'[Customer_ID]), 'Orders'[Is_Repeat_Customer] = TRUE)
+   RETURN DIVIDE(RepeatCustomers, TotalCustomers, 0)
+
+5. Average Customer Rating
+   DAX:
+   Avg Rating = AVERAGE('Orders'[Customer_Rating])
+
+6. Total Delivery Fees
+   DAX:
+   Total Delivery Fees = SUM('Orders'[Delivery_Fee])
+
+7. Total Discounts Given
+   DAX:
+   Total Discounts = SUM('Orders'[Discount])
+
+8. Total Tips
+   DAX:
+   Total Tips = SUM('Orders'[Tip_Amount])
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: SALES & REVENUE ANALYTICS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+9. Sales Previous Period
+   DAX:
+   Sales Previous Period = CALCULATE([Total Sales], DATEADD('Calendar'[Date], -1, MONTH))
+
+10. Sales Growth %
+    DAX:
+    Sales Growth % = DIVIDE([Total Sales] - [Sales Previous Period], [Sales Previous Period], 0)
+
+11. Sales by Day Type
+    DAX:
+    Weekend Sales = CALCULATE([Total Sales], 'Orders'[Day_Type] = "Weekend")
+    Weekday Sales = CALCULATE([Total Sales], 'Orders'[Day_Type] = "Weekday")
+
+12. Revenue per Customer
+    DAX:
+    Revenue per Customer = DIVIDE([Total Sales], DISTINCTCOUNT('Orders'[Customer_ID]), 0)
+
+13. Premium Customer Revenue
+    DAX:
+    Premium Revenue = CALCULATE([Total Sales], 'Customers'[Is_Premium] = TRUE)
+    Premium Revenue % = DIVIDE([Premium Revenue], [Total Sales], 0)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: CUSTOMER BEHAVIOR ANALYTICS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+14. Total Unique Customers
+    DAX:
+    Total Customers = DISTINCTCOUNT('Orders'[Customer_ID])
+
+15. New Customers (First Order in Period)
+    DAX:
+    New Customers = 
+    VAR CurrentPeriodCustomers = VALUES('Orders'[Customer_ID])
+    VAR PreviousPeriodCustomers = CALCULATE(VALUES('Orders'[Customer_ID]), DATEADD('Calendar'[Date], -1, MONTH))
+    RETURN COUNTROWS(EXCEPT(CurrentPeriodCustomers, PreviousPeriodCustomers))
+
+16. Customer Retention Rate
+    DAX:
+    Retention Rate = 1 - [Churn Rate]
+
+17. Churn Rate
+    DAX:
+    Churn Rate = 
+    VAR AllCustomers = DISTINCTCOUNT('Customers'[Customer_ID])
+    VAR ActiveCustomers = DISTINCTCOUNT('Orders'[Customer_ID])
+    RETURN DIVIDE(AllCustomers - ActiveCustomers, AllCustomers, 0)
+
+18. Avg Orders per Customer
+    DAX:
+    Avg Orders per Customer = DIVIDE([Total Orders], [Total Customers], 0)
+
+19. Customer Lifetime Value (CLV)
+    DAX:
+    CLV = 
+    VAR AvgOrderValue = [AOV]
+    VAR AvgPurchaseFrequency = [Avg Orders per Customer]
+    VAR AvgCustomerLifespan = 2.5  // years
+    RETURN AvgOrderValue * AvgPurchaseFrequency * AvgCustomerLifespan
+
+20. NPS Score (Net Promoter Score proxy)
+    DAX:
+    NPS Score = 
+    VAR Promoters = CALCULATE(COUNTROWS('Orders'), 'Orders'[Customer_Rating] >= 4.5)
+    VAR Detractors = CALCULATE(COUNTROWS('Orders'), 'Orders'[Customer_Rating] <= 2.5)
+    VAR TotalRespondents = COUNTROWS(FILTER('Orders', NOT(ISBLANK('Orders'[Customer_Rating]))))
+    RETURN DIVIDE(Promoters - Detractors, TotalRespondents, 0) * 100
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: RESTAURANT PERFORMANCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+21. Top Restaurant by Revenue
+    DAX:
+    Top Restaurant Revenue = MAXX(VALUES('Restaurants'[Restaurant_Name]), [Total Sales])
+
+22. Restaurant Avg Rating
+    DAX:
+    Avg Restaurant Rating = AVERAGE('Restaurants'[Restaurant_Rating])
+
+23. Restaurant Order Count
+    DAX:
+    Restaurant Orders = COUNTROWS('Orders')
+
+24. Revenue per Restaurant
+    DAX:
+    Revenue per Restaurant = DIVIDE([Total Sales], DISTINCTCOUNT('Orders'[Restaurant_ID]), 0)
+
+25. Top Cuisine by Sales
+    DAX:
+    Top Cuisine = TOPN(1, VALUES('Orders'[Cuisine]), [Total Sales], DESC)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: DELIVERY & OPERATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+26. On-Time Delivery Rate
+    DAX:
+    On-Time Delivery % = 
+    VAR OnTime = CALCULATE(COUNTROWS('Orders'), 'Orders'[Delivery_Delay] <= 0)
+    VAR TotalDelivered = CALCULATE(COUNTROWS('Orders'), 'Orders'[Order_Status] = "Delivered")
+    RETURN DIVIDE(OnTime, TotalDelivered, 0)
+
+27. Avg Delivery Time
+    DAX:
+    Avg Delivery Time = AVERAGE('Orders'[Actual_Delivery_Time])
+
+28. Avg Delivery Delay
+    DAX:
+    Avg Delivery Delay = AVERAGE('Orders'[Delivery_Delay])
+
+29. Cancellation Rate
+    DAX:
+    Cancellation Rate = 
+    VAR Cancelled = CALCULATE(COUNTROWS('Orders'), 'Orders'[Order_Status] = "Cancelled")
+    RETURN DIVIDE(Cancelled, [Total Orders], 0)
+
+30. Refund Rate
+    DAX:
+    Refund Rate = 
+    VAR Refunded = CALCULATE(COUNTROWS('Orders'), 'Orders'[Order_Status] = "Refunded")
+    RETURN DIVIDE(Refunded, [Total Orders], 0)
+
+31. Avg Distance per Delivery
+    DAX:
+    Avg Distance = AVERAGE('Orders'[Distance_km])
+
+32. Rainy Weather Impact
+    DAX:
+    Rainy Delay = CALCULATE(AVERAGE('Orders'[Delivery_Delay]), 'Orders'[Rainy_Weather] = TRUE)
+    Normal Delay = CALCULATE(AVERAGE('Orders'[Delivery_Delay]), 'Orders'[Rainy_Weather] = FALSE)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6: TIME-BASED ANALYTICS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+33. Orders by Hour
+    DAX:
+    Orders by Hour = COUNTROWS('Orders')
+    (Use Order_Hour as axis)
+
+34. Peak Hour Orders
+    DAX:
+    Peak Hour Orders = MAXX(VALUES('Orders'[Order_Hour]), [Total Orders])
+
+35. Weekend vs Weekday Orders
+    DAX:
+    Weekend Orders = CALCULATE([Total Orders], 'Orders'[Day_Type] = "Weekend")
+    Weekday Orders = CALCULATE([Total Orders], 'Orders'[Day_Type] = "Weekday")
+
+36. Monthly Sales Trend
+    DAX:
+    Monthly Sales = CALCULATE([Total Sales], DATESMTD('Calendar'[Date]))
+
+37. YoY Growth
+    DAX:
+    YoY Growth = 
+    VAR CurrentYear = CALCULATE([Total Sales], DATESYTD('Calendar'[Date]))
+    VAR PreviousYear = CALCULATE([Total Sales], SAMEPERIODLASTYEAR('Calendar'[Date]))
+    RETURN DIVIDE(CurrentYear - PreviousYear, PreviousYear, 0)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 7: SEGMENTATION & ADVANCED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+38. RFM - Recency Score
+    DAX:
+    Recency Score = 
+    VAR LastOrderDate = MAX('Orders'[Order_Date])
+    VAR DaysSince = DATEDIFF(MAX('Customers'[Last_Order_Date]), LastOrderDate, DAY)
+    RETURN SWITCH(TRUE(),
+        DaysSince <= 7, 5,
+        DaysSince <= 30, 4,
+        DaysSince <= 60, 3,
+        DaysSince <= 90, 2,
+        1
+    )
+
+39. RFM - Frequency Score
+    DAX:
+    Frequency Score = 
+    VAR OrderCount = [Total Orders]
+    RETURN SWITCH(TRUE(),
+        OrderCount >= 20, 5,
+        OrderCount >= 10, 4,
+        OrderCount >= 5, 3,
+        OrderCount >= 2, 2,
+        1
+    )
+
+40. RFM - Monetary Score
+    DAX:
+    Monetary Score = 
+    VAR TotalSpent = [Total Sales]
+    RETURN SWITCH(TRUE(),
+        TotalSpent >= 10000, 5,
+        TotalSpent >= 5000, 4,
+        TotalSpent >= 2500, 3,
+        TotalSpent >= 1000, 2,
+        1
+    )
+
+41. Customer Segment
+    DAX:
+    Customer Segment = 
+    VAR R = [Recency Score]
+    VAR F = [Frequency Score]
+    VAR M = [Monetary Score]
+    VAR RFM = R + F + M
+    RETURN SWITCH(TRUE(),
+        RFM >= 13, "Champions",
+        RFM >= 11, "Loyal Customers",
+        RFM >= 9, "Potential Loyalists",
+        RFM >= 7, "At Risk",
+        RFM >= 5, "Cannot Lose Them",
+        "Lost"
+    )
+
+42. Discount Efficiency
+    DAX:
+    Discount Efficiency = DIVIDE([Total Sales], [Total Discounts], 0)
+
+43. Tip Rate
+    DAX:
+    Tip Rate = DIVIDE([Total Tips], [Total Sales], 0)
+
+44. Avg Time to Order
+    DAX:
+    Avg Time to Order = AVERAGE('Orders'[Time_Taken_to_Order_min])
+
+45. Basket Size by Hunger Level
+    DAX:
+    AOV by Hunger = CALCULATE([AOV], ALLEXCEPT('Orders', 'Orders'[Hunger_Level]))
+
+================================================================================

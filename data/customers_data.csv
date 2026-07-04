@@ -1,0 +1,1201 @@
+Customer_ID,Age,Gender,City,Preferred_Cuisine,Is_Premium,Signup_Date,Total_Orders_Lifetime,Avg_Rating_Given,Age_Bucket
+CUST_00001,56,Female,Mumbai,South Indian,False,2025-04-25,3,3.3,55+
+CUST_00002,36,Male,Bangalore,Thai,False,2025-01-26,5,4.4,35-44
+CUST_00003,39,Male,Chennai,Continental,False,2025-10-09,6,3.4,35-44
+CUST_00004,38,Female,Hyderabad,Thai,False,2025-09-08,6,3.6,35-44
+CUST_00005,59,Male,Ahmedabad,Japanese,False,2025-08-17,4,4.6,55+
+CUST_00006,61,Male,Bangalore,Italian,False,2025-05-23,6,4.4,55+
+CUST_00007,26,Male,Kolkata,Mexican,False,2025-04-15,4,3.8,25-34
+CUST_00008,43,Male,Hyderabad,Japanese,False,2025-03-31,5,4.2,35-44
+CUST_00009,25,Male,Kolkata,Mexican,False,2026-03-09,4,4.5,25-34
+CUST_00010,23,Male,Bangalore,Thai,False,2025-02-02,5,4.6,18-24
+CUST_00011,51,Male,Kolkata,Japanese,False,2025-01-31,2,3.2,45-54
+CUST_00012,40,Female,Ahmedabad,Thai,False,2025-04-06,3,3.5,35-44
+CUST_00013,41,Male,Delhi,Mexican,False,2025-08-12,5,3.6,35-44
+CUST_00014,62,Male,Ahmedabad,South Indian,False,2025-08-27,2,3.6,55+
+CUST_00015,28,Male,Hyderabad,Italian,False,2026-06-02,6,3.1,25-34
+CUST_00016,56,Female,Kolkata,Indian,False,2025-01-28,2,3.7,55+
+CUST_00017,40,Female,Hyderabad,Mexican,False,2025-07-23,4,4.8,35-44
+CUST_00018,18,Male,Ahmedabad,Italian,False,2026-03-06,5,4.1,18-24
+CUST_00019,31,Male,Bangalore,Japanese,True,2025-08-14,4,3.9,25-34
+CUST_00020,49,Female,Delhi,South Indian,False,2026-04-05,4,3.3,45-54
+CUST_00021,56,Male,Chennai,Mexican,False,2025-10-12,4,4.2,55+
+CUST_00022,39,Female,Hyderabad,Continental,False,2025-01-07,8,4.7,35-44
+CUST_00023,45,Male,Delhi,Continental,False,2025-06-13,2,4.6,45-54
+CUST_00024,45,Male,Kolkata,Indian,False,2026-03-09,6,3.9,45-54
+CUST_00025,30,Female,Mumbai,South Indian,False,2025-12-15,7,4.0,25-34
+CUST_00026,50,Male,Delhi,Japanese,False,2025-10-12,6,3.4,45-54
+CUST_00027,41,Female,Delhi,Indian,False,2025-06-09,4,3.5,35-44
+CUST_00028,56,Male,Delhi,Indian,False,2025-08-09,3,3.5,55+
+CUST_00029,19,Male,Mumbai,Thai,False,2025-12-11,6,4.3,18-24
+CUST_00030,19,Female,Bangalore,Continental,False,2025-04-15,8,4.3,18-24
+CUST_00031,28,Male,Delhi,Continental,False,2025-04-05,4,4.3,25-34
+CUST_00032,23,Male,Chennai,South Indian,False,2026-01-25,5,3.6,18-24
+CUST_00033,23,Female,Pune,Mexican,False,2025-04-10,4,3.0,18-24
+CUST_00034,20,Female,Delhi,Japanese,False,2026-01-03,2,4.4,18-24
+CUST_00035,56,Female,Mumbai,Mexican,False,2025-12-19,4,3.4,55+
+CUST_00036,48,Female,Delhi,Mexican,False,2025-09-28,4,5.0,45-54
+CUST_00037,19,Other,Ahmedabad,Thai,False,2025-02-14,7,4.3,18-24
+CUST_00038,26,Male,Hyderabad,South Indian,False,2026-04-16,3,4.8,25-34
+CUST_00039,50,Female,Mumbai,South Indian,False,2025-05-08,3,4.3,45-54
+CUST_00040,52,Male,Kolkata,Indian,True,2026-01-23,4,3.3,45-54
+CUST_00041,35,Male,Bangalore,Thai,False,2025-03-22,6,4.4,35-44
+CUST_00042,50,Male,Mumbai,South Indian,False,2025-10-28,2,4.7,45-54
+CUST_00043,34,Male,Bangalore,Italian,False,2026-01-06,1,3.5,25-34
+CUST_00044,63,Female,Ahmedabad,Italian,False,2025-07-16,8,4.3,55+
+CUST_00045,51,Male,Hyderabad,Japanese,False,2025-03-13,5,3.4,45-54
+CUST_00046,36,Female,Chennai,South Indian,False,2025-02-16,4,4.9,35-44
+CUST_00047,46,Male,Pune,Mexican,True,2025-08-22,9,4.9,45-54
+CUST_00048,63,Female,Ahmedabad,Indian,True,2025-10-24,4,3.6,55+
+CUST_00049,49,Female,Delhi,South Indian,False,2025-03-23,4,3.8,45-54
+CUST_00050,20,Female,Mumbai,South Indian,False,2025-08-27,5,3.7,18-24
+CUST_00051,44,Male,Delhi,South Indian,False,2025-04-14,7,4.4,35-44
+CUST_00052,56,Male,Chennai,Italian,False,2026-01-25,3,4.2,55+
+CUST_00053,24,Male,Chennai,Indian,True,2025-10-12,3,3.8,18-24
+CUST_00054,31,Female,Delhi,Mexican,False,2026-04-10,5,3.9,25-34
+CUST_00055,39,Male,Mumbai,Continental,False,2026-01-09,4,4.2,35-44
+CUST_00056,39,Male,Mumbai,Japanese,False,2025-06-16,4,3.3,35-44
+CUST_00057,50,Female,Delhi,Mexican,False,2026-01-15,3,3.2,45-54
+CUST_00058,62,Male,Delhi,Italian,False,2025-12-30,7,4.5,55+
+CUST_00059,30,Female,Hyderabad,Italian,False,2025-08-03,6,3.5,25-34
+CUST_00060,45,Female,Delhi,Chinese,False,2025-10-01,4,4.7,45-54
+CUST_00061,26,Female,Mumbai,Chinese,False,2025-03-15,5,3.5,25-34
+CUST_00062,42,Female,Delhi,South Indian,False,2025-06-25,4,4.3,35-44
+CUST_00063,22,Female,Delhi,Mexican,False,2025-09-08,6,3.3,18-24
+CUST_00064,39,Male,Mumbai,Thai,True,2025-06-17,4,3.6,35-44
+CUST_00065,22,Male,Mumbai,South Indian,False,2026-04-19,1,3.7,18-24
+CUST_00066,47,Female,Mumbai,Continental,False,2026-01-24,4,3.1,45-54
+CUST_00067,48,Male,Kolkata,South Indian,False,2025-10-04,2,4.3,45-54
+CUST_00068,21,Female,Kolkata,Chinese,True,2025-08-13,2,4.2,18-24
+CUST_00069,44,Female,Hyderabad,Italian,False,2025-11-29,4,3.9,35-44
+CUST_00070,60,Female,Delhi,Indian,False,2025-02-27,2,3.4,55+
+CUST_00071,46,Male,Mumbai,Chinese,True,2025-08-23,4,4.2,45-54
+CUST_00072,40,Male,Delhi,Chinese,False,2025-02-02,1,3.7,35-44
+CUST_00073,58,Male,Hyderabad,Chinese,False,2025-11-20,8,4.8,55+
+CUST_00074,53,Male,Ahmedabad,Mexican,False,2026-02-15,5,4.5,45-54
+CUST_00075,52,Other,Delhi,Chinese,False,2025-10-02,6,4.2,45-54
+CUST_00076,40,Female,Pune,Indian,False,2025-03-09,5,4.5,35-44
+CUST_00077,52,Male,Kolkata,Continental,False,2025-08-05,1,3.8,45-54
+CUST_00078,30,Female,Delhi,Mexican,False,2025-11-19,4,4.7,25-34
+CUST_00079,26,Male,Kolkata,South Indian,False,2025-08-06,0,4.0,25-34
+CUST_00080,33,Male,Delhi,Indian,False,2026-05-27,4,3.4,25-34
+CUST_00081,40,Female,Mumbai,Thai,False,2026-02-10,5,3.1,35-44
+CUST_00082,48,Male,Chennai,Thai,False,2026-04-15,5,3.2,45-54
+CUST_00083,29,Female,Pune,Indian,True,2025-05-27,5,3.2,25-34
+CUST_00084,30,Male,Delhi,Italian,False,2025-09-29,2,3.2,25-34
+CUST_00085,54,Male,Bangalore,Thai,False,2025-05-23,7,4.6,45-54
+CUST_00086,24,Other,Chennai,Continental,False,2025-09-10,2,4.0,18-24
+CUST_00087,61,Female,Bangalore,Chinese,False,2025-09-27,0,3.9,55+
+CUST_00088,62,Male,Bangalore,Chinese,False,2026-03-15,6,4.5,55+
+CUST_00089,58,Female,Hyderabad,Mexican,False,2026-02-13,4,3.7,55+
+CUST_00090,42,Female,Delhi,Continental,False,2026-01-06,1,5.0,35-44
+CUST_00091,62,Male,Pune,Continental,False,2025-08-13,6,4.8,55+
+CUST_00092,53,Female,Ahmedabad,Chinese,False,2025-05-22,8,3.4,45-54
+CUST_00093,32,Male,Hyderabad,Continental,False,2026-06-06,2,4.5,25-34
+CUST_00094,28,Male,Kolkata,South Indian,False,2026-05-21,5,3.2,25-34
+CUST_00095,25,Male,Hyderabad,South Indian,False,2025-04-04,4,4.2,25-34
+CUST_00096,45,Male,Delhi,Italian,False,2025-02-18,0,4.1,45-54
+CUST_00097,50,Male,Hyderabad,South Indian,False,2025-04-23,4,4.8,45-54
+CUST_00098,23,Female,Chennai,Japanese,False,2025-06-06,3,3.2,18-24
+CUST_00099,47,Female,Mumbai,Japanese,False,2025-06-13,3,4.6,45-54
+CUST_00100,35,Other,Mumbai,Thai,False,2026-03-09,9,3.8,35-44
+CUST_00101,44,Female,Mumbai,Indian,False,2025-03-07,2,3.5,35-44
+CUST_00102,23,Female,Bangalore,Thai,False,2026-01-30,3,4.1,18-24
+CUST_00103,54,Female,Chennai,Italian,False,2026-01-26,2,3.9,45-54
+CUST_00104,63,Male,Delhi,Mexican,False,2026-04-25,2,4.3,55+
+CUST_00105,49,Male,Delhi,Japanese,False,2026-06-26,10,4.0,45-54
+CUST_00106,20,Female,Pune,Continental,False,2025-09-15,7,3.2,18-24
+CUST_00107,34,Male,Mumbai,Japanese,False,2025-01-12,5,4.3,25-34
+CUST_00108,28,Male,Mumbai,Mexican,False,2025-04-28,5,4.2,25-34
+CUST_00109,35,Male,Bangalore,Japanese,False,2025-10-01,9,4.1,35-44
+CUST_00110,50,Female,Delhi,Japanese,False,2025-12-15,5,4.4,45-54
+CUST_00111,46,Male,Kolkata,Chinese,False,2025-04-25,2,3.1,45-54
+CUST_00112,22,Other,Bangalore,Thai,False,2025-10-28,2,4.2,18-24
+CUST_00113,28,Male,Mumbai,Japanese,False,2026-03-22,5,3.8,25-34
+CUST_00114,33,Female,Mumbai,South Indian,False,2025-06-11,7,4.7,25-34
+CUST_00115,44,Female,Mumbai,Chinese,False,2026-04-10,2,4.6,35-44
+CUST_00116,35,Male,Mumbai,Thai,False,2025-01-04,7,4.1,35-44
+CUST_00117,29,Male,Delhi,Continental,False,2025-09-27,4,3.6,25-34
+CUST_00118,43,Female,Hyderabad,Japanese,False,2026-05-28,2,3.3,35-44
+CUST_00119,34,Male,Chennai,Indian,False,2025-07-02,6,5.0,25-34
+CUST_00120,64,Male,Bangalore,Chinese,False,2026-06-04,3,4.1,55+
+CUST_00121,19,Female,Mumbai,South Indian,True,2025-04-19,4,4.4,18-24
+CUST_00122,40,Male,Bangalore,Thai,False,2025-11-02,5,3.7,35-44
+CUST_00123,32,Male,Chennai,Mexican,True,2026-06-04,4,3.6,25-34
+CUST_00124,56,Male,Bangalore,Indian,False,2025-07-23,7,4.2,55+
+CUST_00125,21,Male,Hyderabad,Chinese,True,2025-06-06,2,4.1,18-24
+CUST_00126,51,Female,Bangalore,Mexican,True,2026-01-18,3,3.6,45-54
+CUST_00127,23,Female,Hyderabad,Italian,False,2025-06-15,6,5.0,18-24
+CUST_00128,54,Female,Mumbai,Thai,False,2026-06-28,2,3.5,45-54
+CUST_00129,21,Female,Mumbai,Continental,False,2025-01-01,4,4.8,18-24
+CUST_00130,20,Female,Delhi,Mexican,False,2025-11-28,5,4.8,18-24
+CUST_00131,37,Female,Pune,Continental,False,2026-05-16,5,4.0,35-44
+CUST_00132,55,Female,Kolkata,Japanese,False,2025-01-20,3,4.0,55+
+CUST_00133,62,Female,Mumbai,Continental,False,2025-04-25,2,3.4,55+
+CUST_00134,37,Male,Mumbai,Chinese,False,2026-01-07,2,3.2,35-44
+CUST_00135,28,Female,Delhi,Italian,True,2025-11-11,5,3.7,25-34
+CUST_00136,27,Female,Bangalore,Chinese,False,2025-09-03,7,4.6,25-34
+CUST_00137,18,Male,Mumbai,Indian,False,2025-03-01,4,3.9,18-24
+CUST_00138,52,Male,Kolkata,Continental,False,2025-09-04,3,3.8,45-54
+CUST_00139,28,Female,Mumbai,Italian,False,2025-03-22,8,4.4,25-34
+CUST_00140,46,Male,Chennai,Continental,False,2025-03-29,4,4.7,45-54
+CUST_00141,54,Female,Hyderabad,Chinese,False,2026-05-13,7,3.6,45-54
+CUST_00142,59,Male,Chennai,Japanese,False,2025-03-12,7,4.8,55+
+CUST_00143,55,Female,Bangalore,Indian,False,2026-06-30,6,4.8,55+
+CUST_00144,19,Female,Kolkata,Italian,False,2025-05-09,5,3.9,18-24
+CUST_00145,20,Female,Delhi,South Indian,False,2025-05-12,5,4.8,18-24
+CUST_00146,50,Female,Pune,Mexican,False,2026-05-02,2,4.5,45-54
+CUST_00147,54,Female,Mumbai,Mexican,False,2025-06-19,6,4.5,45-54
+CUST_00148,27,Male,Pune,Japanese,False,2025-09-29,5,3.9,25-34
+CUST_00149,32,Female,Mumbai,Japanese,False,2026-06-25,1,4.5,25-34
+CUST_00150,44,Female,Hyderabad,Mexican,False,2026-03-10,6,4.2,35-44
+CUST_00151,37,Male,Kolkata,Continental,False,2025-08-05,5,3.8,35-44
+CUST_00152,43,Female,Mumbai,Thai,True,2025-07-25,9,3.2,35-44
+CUST_00153,50,Male,Pune,Mexican,True,2025-11-16,4,4.8,45-54
+CUST_00154,22,Female,Hyderabad,Chinese,False,2026-02-13,4,3.7,18-24
+CUST_00155,26,Male,Chennai,South Indian,False,2026-01-18,2,4.8,25-34
+CUST_00156,18,Male,Ahmedabad,Continental,False,2026-03-25,2,4.7,18-24
+CUST_00157,18,Female,Bangalore,South Indian,False,2026-06-14,2,3.8,18-24
+CUST_00158,26,Male,Chennai,Chinese,False,2026-04-08,7,3.8,25-34
+CUST_00159,42,Female,Kolkata,Japanese,False,2025-05-04,3,4.5,35-44
+CUST_00160,34,Female,Mumbai,Italian,True,2025-09-11,2,3.4,25-34
+CUST_00161,24,Male,Mumbai,Indian,False,2025-08-19,4,4.2,18-24
+CUST_00162,39,Male,Mumbai,Indian,False,2025-03-07,6,4.9,35-44
+CUST_00163,37,Male,Mumbai,Thai,False,2025-12-13,3,3.6,35-44
+CUST_00164,49,Male,Chennai,Italian,False,2025-01-22,6,3.7,45-54
+CUST_00165,47,Male,Mumbai,Continental,False,2025-08-24,3,4.2,45-54
+CUST_00166,18,Female,Bangalore,Chinese,False,2025-08-14,4,4.0,18-24
+CUST_00167,47,Female,Mumbai,Indian,False,2025-01-08,8,3.2,45-54
+CUST_00168,20,Male,Delhi,Continental,False,2025-03-14,2,4.6,18-24
+CUST_00169,45,Female,Pune,South Indian,True,2025-03-02,3,3.4,45-54
+CUST_00170,41,Male,Bangalore,South Indian,True,2025-08-23,8,4.6,35-44
+CUST_00171,20,Female,Bangalore,South Indian,True,2025-03-11,5,3.5,18-24
+CUST_00172,31,Female,Chennai,South Indian,False,2025-02-02,3,4.3,25-34
+CUST_00173,38,Male,Delhi,Chinese,True,2025-12-05,5,3.2,35-44
+CUST_00174,40,Female,Mumbai,Italian,False,2025-03-14,4,3.8,35-44
+CUST_00175,19,Female,Hyderabad,Italian,False,2026-06-11,4,3.8,18-24
+CUST_00176,40,Male,Pune,Thai,False,2025-09-01,2,4.1,35-44
+CUST_00177,51,Female,Mumbai,Chinese,False,2025-10-13,2,3.3,45-54
+CUST_00178,27,Female,Ahmedabad,Japanese,False,2026-05-13,6,3.9,25-34
+CUST_00179,34,Male,Bangalore,Thai,False,2025-08-08,1,3.4,25-34
+CUST_00180,39,Female,Ahmedabad,Chinese,False,2025-05-16,5,4.4,35-44
+CUST_00181,54,Male,Kolkata,Thai,False,2026-04-30,8,4.0,45-54
+CUST_00182,51,Female,Hyderabad,Chinese,False,2025-09-06,0,3.2,45-54
+CUST_00183,39,Male,Kolkata,Continental,False,2026-04-30,6,3.5,35-44
+CUST_00184,62,Female,Mumbai,Thai,False,2026-02-21,1,3.8,55+
+CUST_00185,63,Male,Mumbai,Italian,False,2025-07-14,2,3.2,55+
+CUST_00186,43,Male,Pune,Italian,False,2025-04-07,7,4.4,35-44
+CUST_00187,56,Female,Kolkata,Japanese,False,2025-04-10,4,4.9,55+
+CUST_00188,22,Male,Delhi,Japanese,False,2026-03-18,2,4.2,18-24
+CUST_00189,60,Female,Kolkata,Italian,False,2025-12-29,1,4.5,55+
+CUST_00190,26,Male,Chennai,Indian,False,2026-03-10,4,4.2,25-34
+CUST_00191,42,Male,Chennai,Thai,True,2026-02-25,2,4.9,35-44
+CUST_00192,55,Female,Delhi,Mexican,False,2026-04-24,2,4.9,55+
+CUST_00193,34,Female,Bangalore,Japanese,True,2025-02-25,3,4.9,25-34
+CUST_00194,36,Female,Chennai,Japanese,False,2025-04-11,5,4.3,35-44
+CUST_00195,25,Male,Bangalore,Japanese,False,2025-03-04,4,3.1,25-34
+CUST_00196,43,Male,Hyderabad,Japanese,False,2026-02-17,2,4.1,35-44
+CUST_00197,39,Female,Mumbai,Thai,False,2025-12-14,6,3.4,35-44
+CUST_00198,25,Female,Kolkata,Chinese,False,2025-04-22,4,3.1,25-34
+CUST_00199,52,Male,Pune,Indian,False,2025-09-12,0,3.7,45-54
+CUST_00200,61,Male,Mumbai,Thai,False,2025-07-16,5,3.9,55+
+CUST_00201,40,Male,Delhi,Indian,False,2025-07-14,7,4.3,35-44
+CUST_00202,30,Female,Pune,Chinese,False,2026-04-05,5,3.8,25-34
+CUST_00203,52,Female,Mumbai,Japanese,False,2025-05-24,5,3.8,45-54
+CUST_00204,49,Female,Ahmedabad,Mexican,True,2026-03-09,3,3.2,45-54
+CUST_00205,61,Female,Pune,Japanese,False,2025-07-07,6,3.2,55+
+CUST_00206,56,Female,Chennai,Indian,True,2025-10-13,4,3.7,55+
+CUST_00207,47,Female,Hyderabad,Thai,True,2026-04-19,3,3.0,45-54
+CUST_00208,63,Male,Mumbai,Indian,False,2025-09-13,2,3.4,55+
+CUST_00209,54,Female,Mumbai,Continental,False,2025-03-19,5,4.8,45-54
+CUST_00210,41,Male,Hyderabad,Indian,False,2026-03-30,4,3.1,35-44
+CUST_00211,25,Female,Hyderabad,Thai,False,2025-04-11,2,3.2,25-34
+CUST_00212,60,Male,Delhi,Indian,False,2025-02-21,3,4.7,55+
+CUST_00213,22,Male,Ahmedabad,Indian,False,2025-01-16,4,4.2,18-24
+CUST_00214,59,Male,Bangalore,Indian,False,2025-04-06,4,4.6,55+
+CUST_00215,55,Female,Chennai,Indian,False,2025-08-31,2,4.2,55+
+CUST_00216,51,Male,Delhi,Italian,True,2025-06-20,3,4.8,45-54
+CUST_00217,42,Female,Mumbai,Japanese,False,2026-02-21,2,4.1,35-44
+CUST_00218,51,Male,Delhi,South Indian,False,2026-05-13,2,3.1,45-54
+CUST_00219,35,Male,Delhi,Thai,False,2026-05-08,6,5.0,35-44
+CUST_00220,57,Female,Bangalore,Italian,False,2025-08-07,3,3.7,55+
+CUST_00221,51,Female,Pune,Indian,False,2026-02-15,4,4.6,45-54
+CUST_00222,57,Male,Mumbai,South Indian,False,2025-03-02,7,4.7,55+
+CUST_00223,42,Female,Mumbai,Italian,False,2025-06-18,4,3.3,35-44
+CUST_00224,60,Female,Bangalore,Japanese,False,2026-01-24,2,3.3,55+
+CUST_00225,60,Male,Kolkata,Chinese,False,2025-01-03,4,4.7,55+
+CUST_00226,46,Male,Mumbai,Thai,False,2026-02-04,7,5.0,45-54
+CUST_00227,34,Male,Delhi,South Indian,False,2025-09-29,7,4.6,25-34
+CUST_00228,23,Male,Mumbai,Indian,False,2026-04-11,1,3.7,18-24
+CUST_00229,32,Female,Mumbai,Mexican,False,2025-10-20,5,4.5,25-34
+CUST_00230,21,Male,Hyderabad,Continental,False,2026-03-10,5,3.9,18-24
+CUST_00231,39,Female,Mumbai,Chinese,False,2026-05-14,5,4.4,35-44
+CUST_00232,29,Female,Mumbai,Thai,False,2025-06-08,6,3.1,25-34
+CUST_00233,50,Male,Bangalore,Italian,False,2025-07-14,1,3.0,45-54
+CUST_00234,51,Male,Ahmedabad,Indian,True,2025-10-31,4,4.7,45-54
+CUST_00235,32,Female,Hyderabad,Mexican,False,2025-08-11,3,4.5,25-34
+CUST_00236,37,Female,Delhi,Indian,False,2025-03-01,5,3.1,35-44
+CUST_00237,46,Female,Delhi,Italian,False,2025-03-04,3,4.5,45-54
+CUST_00238,22,Other,Delhi,Mexican,False,2025-11-18,7,4.5,18-24
+CUST_00239,52,Male,Hyderabad,Mexican,False,2025-02-28,6,3.9,45-54
+CUST_00240,44,Female,Mumbai,Indian,True,2025-02-21,5,3.3,35-44
+CUST_00241,44,Female,Chennai,Italian,False,2026-05-04,3,3.6,35-44
+CUST_00242,41,Female,Hyderabad,Continental,False,2026-05-30,1,3.0,35-44
+CUST_00243,24,Male,Hyderabad,Mexican,False,2026-06-28,4,3.5,18-24
+CUST_00244,39,Female,Delhi,South Indian,False,2025-06-11,6,5.0,35-44
+CUST_00245,34,Male,Mumbai,South Indian,False,2025-02-28,4,4.9,25-34
+CUST_00246,55,Male,Hyderabad,Indian,False,2026-06-05,6,4.8,55+
+CUST_00247,28,Male,Mumbai,Indian,True,2025-03-24,2,4.1,25-34
+CUST_00248,32,Male,Hyderabad,Mexican,False,2025-07-10,2,4.6,25-34
+CUST_00249,50,Male,Mumbai,Thai,True,2025-03-12,3,4.6,45-54
+CUST_00250,43,Male,Mumbai,Japanese,False,2025-03-11,2,4.4,35-44
+CUST_00251,32,Male,Mumbai,Indian,False,2025-08-29,2,3.2,25-34
+CUST_00252,23,Female,Hyderabad,Japanese,False,2026-02-18,8,4.4,18-24
+CUST_00253,25,Female,Hyderabad,Mexican,False,2025-05-03,1,4.6,25-34
+CUST_00254,24,Female,Bangalore,Continental,False,2025-09-10,4,3.9,18-24
+CUST_00255,20,Male,Mumbai,Continental,True,2025-02-10,3,3.1,18-24
+CUST_00256,40,Female,Bangalore,Italian,False,2025-03-25,2,5.0,35-44
+CUST_00257,53,Female,Pune,Thai,False,2026-03-06,4,4.0,45-54
+CUST_00258,35,Male,Hyderabad,Thai,False,2026-06-20,3,4.9,35-44
+CUST_00259,20,Male,Delhi,Thai,True,2025-11-20,3,3.1,18-24
+CUST_00260,50,Female,Mumbai,Thai,False,2025-09-25,2,4.5,45-54
+CUST_00261,37,Female,Chennai,Continental,False,2025-07-29,4,3.1,35-44
+CUST_00262,49,Female,Mumbai,Chinese,False,2025-11-18,5,4.7,45-54
+CUST_00263,51,Female,Hyderabad,Italian,False,2025-09-02,3,4.8,45-54
+CUST_00264,29,Male,Bangalore,Thai,False,2025-09-29,4,3.3,25-34
+CUST_00265,25,Male,Hyderabad,Chinese,False,2026-02-10,2,4.9,25-34
+CUST_00266,54,Female,Bangalore,Continental,True,2025-05-15,7,3.8,45-54
+CUST_00267,31,Male,Delhi,Chinese,True,2025-11-04,3,4.3,25-34
+CUST_00268,42,Female,Delhi,Thai,True,2026-04-14,8,4.2,35-44
+CUST_00269,29,Male,Ahmedabad,Japanese,False,2025-11-20,0,4.8,25-34
+CUST_00270,31,Male,Bangalore,Mexican,False,2025-03-16,3,3.9,25-34
+CUST_00271,37,Female,Kolkata,Indian,False,2025-01-10,7,3.3,35-44
+CUST_00272,60,Female,Hyderabad,Thai,False,2026-04-15,3,4.4,55+
+CUST_00273,45,Female,Bangalore,Italian,True,2025-04-13,3,3.5,45-54
+CUST_00274,19,Male,Delhi,Chinese,True,2025-03-17,4,3.2,18-24
+CUST_00275,23,Male,Mumbai,Indian,False,2025-08-07,6,3.1,18-24
+CUST_00276,59,Male,Bangalore,Italian,True,2026-06-03,8,4.9,55+
+CUST_00277,46,Female,Bangalore,Japanese,False,2025-09-29,4,3.7,45-54
+CUST_00278,55,Male,Mumbai,Thai,True,2025-05-16,7,4.9,55+
+CUST_00279,25,Female,Mumbai,South Indian,False,2025-12-24,6,3.5,25-34
+CUST_00280,64,Male,Hyderabad,Japanese,False,2025-03-12,5,3.7,55+
+CUST_00281,47,Male,Hyderabad,South Indian,False,2025-09-08,4,4.5,45-54
+CUST_00282,44,Female,Hyderabad,Indian,False,2026-01-14,5,4.9,35-44
+CUST_00283,31,Male,Hyderabad,Chinese,False,2025-10-19,3,3.3,25-34
+CUST_00284,23,Male,Pune,Indian,False,2025-06-11,6,4.6,18-24
+CUST_00285,30,Male,Mumbai,Chinese,False,2026-03-25,2,3.7,25-34
+CUST_00286,55,Male,Kolkata,Thai,False,2025-11-06,4,3.9,55+
+CUST_00287,28,Male,Delhi,Japanese,True,2026-06-26,5,3.6,25-34
+CUST_00288,29,Female,Bangalore,Italian,False,2025-01-09,6,3.9,25-34
+CUST_00289,49,Male,Delhi,Chinese,False,2025-11-03,4,3.3,45-54
+CUST_00290,31,Female,Bangalore,Italian,False,2025-04-17,5,4.9,25-34
+CUST_00291,19,Male,Mumbai,Chinese,True,2025-05-18,4,3.3,18-24
+CUST_00292,54,Male,Bangalore,Italian,False,2025-09-28,3,4.6,45-54
+CUST_00293,61,Female,Mumbai,Japanese,False,2025-04-29,3,4.8,55+
+CUST_00294,32,Male,Kolkata,Japanese,False,2025-04-20,3,4.0,25-34
+CUST_00295,36,Male,Bangalore,South Indian,False,2025-06-09,3,4.3,35-44
+CUST_00296,46,Female,Bangalore,South Indian,True,2025-10-06,3,4.4,45-54
+CUST_00297,19,Male,Delhi,Indian,False,2025-10-16,8,3.2,18-24
+CUST_00298,61,Male,Bangalore,Japanese,False,2025-08-04,1,4.6,55+
+CUST_00299,59,Female,Bangalore,Continental,False,2025-12-18,5,4.1,55+
+CUST_00300,62,Female,Kolkata,Japanese,False,2025-07-28,4,4.0,55+
+CUST_00301,45,Male,Mumbai,Chinese,False,2025-09-28,6,3.7,45-54
+CUST_00302,59,Female,Delhi,Chinese,False,2026-06-02,3,3.6,55+
+CUST_00303,41,Female,Bangalore,Chinese,False,2026-05-16,8,4.5,35-44
+CUST_00304,27,Male,Bangalore,Japanese,False,2025-09-15,7,4.7,25-34
+CUST_00305,50,Male,Mumbai,South Indian,False,2025-02-22,3,3.5,45-54
+CUST_00306,24,Female,Delhi,Continental,False,2025-04-05,4,3.1,18-24
+CUST_00307,42,Other,Mumbai,Thai,False,2026-03-10,2,3.9,35-44
+CUST_00308,56,Female,Mumbai,South Indian,True,2025-10-11,5,3.2,55+
+CUST_00309,43,Male,Kolkata,Thai,True,2025-02-15,5,3.2,35-44
+CUST_00310,50,Female,Delhi,Indian,False,2025-01-04,6,3.7,45-54
+CUST_00311,21,Male,Pune,Mexican,False,2025-12-08,4,3.5,18-24
+CUST_00312,38,Male,Bangalore,Italian,False,2025-05-14,6,3.6,35-44
+CUST_00313,20,Male,Mumbai,Mexican,False,2025-09-26,6,4.1,18-24
+CUST_00314,51,Male,Delhi,Continental,False,2025-06-15,7,4.9,45-54
+CUST_00315,30,Female,Chennai,Japanese,False,2026-03-29,3,3.2,25-34
+CUST_00316,33,Male,Delhi,South Indian,False,2026-03-14,2,4.9,25-34
+CUST_00317,62,Male,Ahmedabad,Continental,False,2025-01-10,5,4.9,55+
+CUST_00318,61,Male,Hyderabad,Mexican,False,2025-04-25,4,3.2,55+
+CUST_00319,56,Female,Hyderabad,Mexican,False,2025-03-19,3,4.4,55+
+CUST_00320,31,Male,Delhi,Thai,False,2025-06-02,6,3.2,25-34
+CUST_00321,44,Male,Bangalore,Italian,False,2025-02-06,1,3.9,35-44
+CUST_00322,21,Female,Mumbai,Continental,False,2026-01-14,6,5.0,18-24
+CUST_00323,54,Male,Bangalore,Indian,True,2025-06-01,5,4.6,45-54
+CUST_00324,52,Female,Bangalore,Continental,False,2026-03-17,4,4.6,45-54
+CUST_00325,31,Male,Delhi,Chinese,False,2025-05-11,2,3.4,25-34
+CUST_00326,31,Female,Hyderabad,Indian,False,2025-02-12,4,4.0,25-34
+CUST_00327,50,Female,Bangalore,Continental,False,2025-11-12,2,4.7,45-54
+CUST_00328,20,Female,Pune,Thai,False,2026-01-09,5,3.1,18-24
+CUST_00329,51,Male,Delhi,Thai,False,2025-02-10,4,4.9,45-54
+CUST_00330,49,Female,Kolkata,Mexican,False,2026-01-02,8,3.2,45-54
+CUST_00331,23,Male,Mumbai,Chinese,False,2025-08-04,1,3.3,18-24
+CUST_00332,22,Female,Bangalore,Chinese,False,2025-09-13,1,4.5,18-24
+CUST_00333,48,Female,Ahmedabad,Italian,False,2025-04-16,5,3.1,45-54
+CUST_00334,45,Male,Mumbai,South Indian,False,2025-12-29,5,4.2,45-54
+CUST_00335,21,Other,Chennai,Japanese,False,2026-02-21,6,3.3,18-24
+CUST_00336,53,Female,Bangalore,Japanese,False,2025-06-08,2,3.8,45-54
+CUST_00337,52,Male,Delhi,Continental,False,2025-08-31,6,3.8,45-54
+CUST_00338,22,Male,Delhi,Italian,False,2025-06-16,4,4.6,18-24
+CUST_00339,38,Female,Mumbai,Japanese,False,2025-07-01,1,3.6,35-44
+CUST_00340,43,Male,Ahmedabad,Chinese,True,2026-02-27,2,3.1,35-44
+CUST_00341,34,Male,Bangalore,Japanese,False,2025-01-26,7,3.5,25-34
+CUST_00342,43,Male,Pune,South Indian,False,2025-07-03,2,4.0,35-44
+CUST_00343,58,Female,Pune,Chinese,False,2025-12-07,4,4.8,55+
+CUST_00344,58,Male,Hyderabad,Indian,False,2026-02-26,3,3.9,55+
+CUST_00345,46,Male,Kolkata,South Indian,False,2025-09-12,2,3.9,45-54
+CUST_00346,28,Male,Delhi,Continental,False,2025-10-01,6,4.2,25-34
+CUST_00347,40,Male,Mumbai,South Indian,False,2025-06-13,2,3.9,35-44
+CUST_00348,25,Male,Mumbai,Italian,False,2025-04-21,5,4.6,25-34
+CUST_00349,52,Male,Kolkata,Thai,False,2026-01-27,6,3.9,45-54
+CUST_00350,53,Male,Chennai,Japanese,False,2025-02-09,5,3.7,45-54
+CUST_00351,22,Female,Pune,South Indian,False,2026-04-27,5,3.0,18-24
+CUST_00352,49,Male,Pune,South Indian,False,2025-08-16,5,4.2,45-54
+CUST_00353,19,Female,Mumbai,Mexican,False,2025-07-24,1,4.5,18-24
+CUST_00354,58,Female,Bangalore,Japanese,False,2026-04-17,3,4.6,55+
+CUST_00355,29,Male,Mumbai,Thai,False,2025-12-25,4,4.5,25-34
+CUST_00356,49,Female,Mumbai,Chinese,False,2025-11-09,3,4.9,45-54
+CUST_00357,26,Male,Bangalore,Mexican,False,2025-08-22,3,3.3,25-34
+CUST_00358,47,Female,Hyderabad,Italian,False,2025-08-17,2,4.3,45-54
+CUST_00359,52,Female,Delhi,Japanese,False,2025-01-25,6,4.8,45-54
+CUST_00360,35,Female,Delhi,Continental,False,2025-07-17,3,4.5,35-44
+CUST_00361,24,Male,Mumbai,South Indian,False,2026-02-13,5,5.0,18-24
+CUST_00362,39,Female,Chennai,Chinese,True,2025-12-03,8,4.5,35-44
+CUST_00363,44,Female,Bangalore,Japanese,False,2025-10-13,2,4.5,35-44
+CUST_00364,60,Female,Chennai,Italian,False,2025-03-13,4,4.1,55+
+CUST_00365,46,Male,Bangalore,Indian,False,2025-10-13,7,3.3,45-54
+CUST_00366,59,Female,Chennai,Mexican,False,2025-12-26,2,5.0,55+
+CUST_00367,57,Male,Pune,Chinese,False,2026-06-06,3,4.1,55+
+CUST_00368,63,Female,Mumbai,Indian,False,2026-02-14,0,4.1,55+
+CUST_00369,53,Male,Chennai,Continental,False,2025-12-06,5,3.0,45-54
+CUST_00370,51,Female,Hyderabad,South Indian,True,2025-01-29,5,3.6,45-54
+CUST_00371,36,Other,Delhi,Thai,False,2025-04-29,9,4.6,35-44
+CUST_00372,52,Male,Hyderabad,Continental,False,2025-09-25,4,3.0,45-54
+CUST_00373,55,Male,Mumbai,Thai,True,2025-07-02,2,4.2,55+
+CUST_00374,21,Male,Chennai,Thai,False,2025-09-29,3,4.1,18-24
+CUST_00375,21,Male,Bangalore,Continental,False,2025-02-09,3,3.5,18-24
+CUST_00376,36,Male,Mumbai,Continental,False,2025-04-22,2,4.5,35-44
+CUST_00377,55,Male,Pune,Italian,False,2026-03-21,2,3.3,55+
+CUST_00378,50,Male,Delhi,Italian,False,2025-12-20,5,4.5,45-54
+CUST_00379,62,Male,Hyderabad,Mexican,False,2025-11-18,6,3.2,55+
+CUST_00380,23,Other,Chennai,Japanese,False,2026-03-23,2,4.2,18-24
+CUST_00381,27,Male,Mumbai,Indian,False,2026-06-08,5,4.2,25-34
+CUST_00382,23,Male,Delhi,Thai,True,2025-04-29,6,4.7,18-24
+CUST_00383,43,Female,Pune,Thai,False,2026-01-30,5,3.9,35-44
+CUST_00384,22,Female,Hyderabad,Continental,False,2025-07-14,4,4.0,18-24
+CUST_00385,18,Female,Mumbai,Indian,False,2025-09-18,3,4.2,18-24
+CUST_00386,48,Female,Bangalore,Thai,True,2025-02-15,4,3.1,45-54
+CUST_00387,47,Male,Delhi,Japanese,False,2026-03-23,5,3.5,45-54
+CUST_00388,33,Male,Bangalore,Indian,False,2025-01-02,6,3.1,25-34
+CUST_00389,62,Female,Mumbai,Chinese,False,2026-06-17,7,3.3,55+
+CUST_00390,21,Male,Chennai,Continental,False,2025-07-21,5,3.0,18-24
+CUST_00391,28,Female,Bangalore,Japanese,False,2026-01-08,6,4.7,25-34
+CUST_00392,31,Female,Ahmedabad,Chinese,True,2026-03-18,5,4.5,25-34
+CUST_00393,54,Female,Bangalore,Indian,False,2025-03-13,3,4.9,45-54
+CUST_00394,58,Male,Chennai,Japanese,False,2025-12-05,5,4.7,55+
+CUST_00395,50,Female,Mumbai,Chinese,False,2025-11-18,4,4.1,45-54
+CUST_00396,56,Female,Bangalore,Continental,False,2025-05-08,3,4.7,55+
+CUST_00397,27,Male,Kolkata,South Indian,False,2025-11-04,6,3.2,25-34
+CUST_00398,33,Male,Hyderabad,Continental,False,2026-06-04,5,4.6,25-34
+CUST_00399,55,Female,Bangalore,South Indian,False,2025-11-13,6,4.0,55+
+CUST_00400,49,Male,Mumbai,Japanese,False,2026-02-23,3,4.5,45-54
+CUST_00401,32,Male,Pune,Continental,False,2025-12-01,5,3.5,25-34
+CUST_00402,58,Female,Chennai,Indian,True,2026-02-17,7,3.1,55+
+CUST_00403,20,Female,Bangalore,Mexican,False,2025-10-30,6,3.7,18-24
+CUST_00404,40,Female,Delhi,Italian,False,2025-05-11,2,3.4,35-44
+CUST_00405,29,Female,Delhi,Mexican,False,2025-07-16,6,3.6,25-34
+CUST_00406,25,Female,Delhi,South Indian,False,2026-03-07,2,4.0,25-34
+CUST_00407,37,Female,Mumbai,South Indian,False,2026-01-24,3,4.8,35-44
+CUST_00408,60,Other,Mumbai,Indian,True,2025-06-28,3,3.7,55+
+CUST_00409,49,Female,Mumbai,Mexican,False,2025-11-05,3,4.9,45-54
+CUST_00410,36,Female,Chennai,Continental,False,2026-02-20,7,5.0,35-44
+CUST_00411,62,Other,Hyderabad,Thai,False,2025-01-01,3,5.0,55+
+CUST_00412,48,Female,Mumbai,Thai,False,2025-11-08,1,4.1,45-54
+CUST_00413,42,Female,Mumbai,Continental,False,2025-10-21,8,3.4,35-44
+CUST_00414,46,Male,Kolkata,Continental,False,2025-08-04,6,3.6,45-54
+CUST_00415,28,Female,Hyderabad,Indian,False,2026-03-17,3,4.0,25-34
+CUST_00416,20,Female,Bangalore,South Indian,False,2025-11-26,1,4.7,18-24
+CUST_00417,50,Male,Mumbai,Indian,False,2026-04-22,5,3.4,45-54
+CUST_00418,28,Female,Hyderabad,Continental,False,2026-03-29,2,4.6,25-34
+CUST_00419,47,Female,Hyderabad,Mexican,False,2026-03-29,4,3.2,45-54
+CUST_00420,52,Female,Mumbai,Japanese,False,2025-08-07,4,4.3,45-54
+CUST_00421,18,Female,Delhi,Japanese,False,2026-06-08,1,4.7,18-24
+CUST_00422,64,Male,Mumbai,Italian,False,2026-04-30,3,3.8,55+
+CUST_00423,31,Female,Delhi,Indian,False,2025-06-23,10,4.3,25-34
+CUST_00424,35,Female,Pune,Italian,False,2025-03-28,4,3.2,35-44
+CUST_00425,63,Male,Pune,South Indian,True,2025-10-18,7,3.8,55+
+CUST_00426,31,Male,Mumbai,South Indian,False,2026-06-12,4,4.8,25-34
+CUST_00427,40,Male,Hyderabad,Continental,False,2025-12-10,3,4.5,35-44
+CUST_00428,26,Female,Ahmedabad,Continental,False,2025-04-06,3,3.6,25-34
+CUST_00429,36,Female,Mumbai,Continental,True,2025-08-29,5,3.1,35-44
+CUST_00430,34,Male,Mumbai,South Indian,False,2025-11-14,4,4.6,25-34
+CUST_00431,52,Male,Chennai,Indian,True,2025-08-19,4,4.8,45-54
+CUST_00432,25,Female,Delhi,Continental,False,2025-07-23,7,3.4,25-34
+CUST_00433,33,Male,Chennai,Continental,False,2025-05-31,4,3.5,25-34
+CUST_00434,63,Female,Bangalore,Thai,False,2025-01-26,2,3.4,55+
+CUST_00435,61,Male,Mumbai,Thai,True,2025-02-17,1,4.7,55+
+CUST_00436,51,Female,Bangalore,Thai,False,2025-09-08,5,3.2,45-54
+CUST_00437,29,Male,Mumbai,Italian,False,2026-05-02,7,3.9,25-34
+CUST_00438,57,Female,Bangalore,Indian,False,2025-03-16,6,3.5,55+
+CUST_00439,24,Male,Delhi,Mexican,False,2026-04-12,1,4.3,18-24
+CUST_00440,19,Male,Bangalore,Indian,False,2026-03-01,3,4.3,18-24
+CUST_00441,23,Female,Mumbai,Thai,False,2025-07-19,6,3.1,18-24
+CUST_00442,25,Male,Bangalore,Indian,False,2026-01-29,2,4.0,25-34
+CUST_00443,57,Male,Bangalore,Mexican,False,2026-05-22,7,4.0,55+
+CUST_00444,55,Female,Mumbai,South Indian,True,2026-02-14,7,3.2,55+
+CUST_00445,43,Male,Bangalore,South Indian,False,2025-09-07,4,3.6,35-44
+CUST_00446,58,Male,Mumbai,Indian,False,2025-06-01,3,4.1,55+
+CUST_00447,56,Female,Mumbai,South Indian,False,2025-01-06,2,5.0,55+
+CUST_00448,30,Female,Mumbai,South Indian,False,2025-04-20,3,3.8,25-34
+CUST_00449,25,Female,Delhi,Thai,False,2026-03-12,2,4.6,25-34
+CUST_00450,56,Female,Chennai,Indian,False,2025-08-13,6,3.1,55+
+CUST_00451,62,Female,Mumbai,Mexican,False,2025-06-30,4,3.2,55+
+CUST_00452,47,Female,Hyderabad,Thai,True,2026-06-15,3,3.8,45-54
+CUST_00453,37,Female,Delhi,Italian,False,2026-04-21,5,4.9,35-44
+CUST_00454,46,Female,Delhi,Italian,False,2025-02-21,4,4.0,45-54
+CUST_00455,26,Female,Pune,Mexican,False,2025-09-13,7,4.5,25-34
+CUST_00456,46,Male,Bangalore,South Indian,False,2025-05-05,1,4.4,45-54
+CUST_00457,29,Male,Bangalore,Thai,False,2026-04-13,5,4.8,25-34
+CUST_00458,48,Male,Chennai,Continental,False,2025-05-17,4,4.4,45-54
+CUST_00459,35,Male,Mumbai,Indian,False,2026-04-21,5,4.6,35-44
+CUST_00460,61,Female,Pune,Mexican,False,2026-06-28,1,4.5,55+
+CUST_00461,40,Male,Bangalore,Chinese,False,2025-11-21,6,3.1,35-44
+CUST_00462,50,Female,Bangalore,Mexican,False,2026-03-30,3,3.3,45-54
+CUST_00463,18,Male,Mumbai,Thai,False,2026-06-01,3,3.8,18-24
+CUST_00464,52,Male,Mumbai,Continental,False,2026-03-13,4,3.2,45-54
+CUST_00465,22,Female,Pune,South Indian,False,2026-04-02,4,3.9,18-24
+CUST_00466,21,Male,Ahmedabad,Continental,True,2025-06-12,4,4.0,18-24
+CUST_00467,28,Male,Mumbai,Continental,True,2026-05-02,5,3.8,25-34
+CUST_00468,59,Male,Delhi,Thai,False,2026-04-06,3,3.6,55+
+CUST_00469,54,Female,Delhi,Mexican,False,2025-09-23,7,4.8,45-54
+CUST_00470,21,Other,Bangalore,Thai,False,2025-09-11,2,4.9,18-24
+CUST_00471,34,Male,Delhi,Mexican,False,2025-10-11,5,4.0,25-34
+CUST_00472,30,Female,Chennai,Italian,False,2026-06-18,5,3.7,25-34
+CUST_00473,51,Male,Mumbai,Indian,False,2026-05-12,1,4.4,45-54
+CUST_00474,38,Female,Bangalore,Italian,False,2025-09-02,6,4.2,35-44
+CUST_00475,52,Male,Chennai,Mexican,False,2025-10-09,4,5.0,45-54
+CUST_00476,35,Female,Bangalore,Chinese,False,2026-03-27,2,4.5,35-44
+CUST_00477,25,Male,Bangalore,Mexican,False,2025-03-21,3,3.3,25-34
+CUST_00478,44,Female,Chennai,Thai,False,2025-10-20,7,3.1,35-44
+CUST_00479,28,Female,Mumbai,South Indian,False,2025-08-29,4,4.8,25-34
+CUST_00480,29,Female,Kolkata,Chinese,False,2025-10-06,4,4.0,25-34
+CUST_00481,49,Male,Delhi,Mexican,False,2025-12-10,1,3.4,45-54
+CUST_00482,41,Male,Hyderabad,South Indian,False,2025-11-24,4,4.2,35-44
+CUST_00483,31,Male,Bangalore,Japanese,False,2025-03-24,6,4.1,25-34
+CUST_00484,62,Male,Ahmedabad,South Indian,False,2025-05-22,4,3.9,55+
+CUST_00485,50,Female,Mumbai,Continental,False,2025-06-04,4,3.1,45-54
+CUST_00486,64,Female,Kolkata,South Indian,False,2025-08-25,0,4.9,55+
+CUST_00487,39,Female,Hyderabad,Chinese,False,2026-01-28,5,4.3,35-44
+CUST_00488,29,Female,Delhi,South Indian,False,2025-06-06,4,4.6,25-34
+CUST_00489,52,Other,Hyderabad,Indian,True,2025-08-08,5,3.0,45-54
+CUST_00490,20,Female,Pune,Indian,True,2025-03-07,3,3.0,18-24
+CUST_00491,25,Female,Hyderabad,Japanese,False,2026-03-01,6,4.4,25-34
+CUST_00492,57,Male,Chennai,Continental,False,2026-02-22,2,3.8,55+
+CUST_00493,55,Male,Bangalore,Continental,False,2025-12-05,1,4.9,55+
+CUST_00494,51,Male,Mumbai,Continental,False,2026-04-23,5,3.2,45-54
+CUST_00495,51,Female,Hyderabad,Mexican,True,2026-03-02,5,4.4,45-54
+CUST_00496,64,Male,Pune,Italian,False,2025-03-05,3,4.9,55+
+CUST_00497,44,Male,Bangalore,Japanese,False,2025-07-31,2,4.3,35-44
+CUST_00498,30,Female,Delhi,Indian,False,2026-03-07,8,3.4,25-34
+CUST_00499,40,Female,Bangalore,Mexican,False,2026-02-03,3,3.1,35-44
+CUST_00500,49,Female,Bangalore,Continental,False,2025-01-21,4,4.6,45-54
+CUST_00501,39,Female,Mumbai,Italian,False,2026-01-25,1,3.5,35-44
+CUST_00502,48,Male,Mumbai,Chinese,False,2026-05-04,6,3.5,45-54
+CUST_00503,32,Male,Mumbai,Thai,True,2025-01-07,2,3.6,25-34
+CUST_00504,55,Female,Bangalore,South Indian,True,2025-12-27,3,3.5,55+
+CUST_00505,46,Female,Pune,Italian,False,2025-11-02,4,4.7,45-54
+CUST_00506,61,Female,Kolkata,Italian,False,2026-02-04,3,4.8,55+
+CUST_00507,29,Female,Mumbai,Japanese,False,2026-03-06,6,3.8,25-34
+CUST_00508,44,Female,Hyderabad,Japanese,False,2025-08-14,2,4.4,35-44
+CUST_00509,30,Male,Delhi,Italian,False,2026-05-15,3,4.4,25-34
+CUST_00510,47,Male,Bangalore,Italian,False,2025-08-13,2,3.1,45-54
+CUST_00511,54,Male,Delhi,South Indian,False,2025-10-07,5,3.9,45-54
+CUST_00512,35,Female,Chennai,Indian,True,2026-03-23,6,4.5,35-44
+CUST_00513,35,Female,Delhi,Chinese,False,2026-05-13,6,4.3,35-44
+CUST_00514,28,Female,Hyderabad,Mexican,False,2025-01-30,3,4.2,25-34
+CUST_00515,51,Male,Kolkata,Mexican,False,2026-02-03,3,3.6,45-54
+CUST_00516,61,Male,Hyderabad,Continental,False,2025-12-11,4,4.8,55+
+CUST_00517,60,Male,Mumbai,Continental,False,2026-02-19,2,4.1,55+
+CUST_00518,64,Female,Mumbai,Thai,False,2025-06-19,6,4.7,55+
+CUST_00519,34,Male,Delhi,Indian,False,2026-04-24,3,3.7,25-34
+CUST_00520,29,Female,Mumbai,Italian,False,2025-05-11,4,3.1,25-34
+CUST_00521,43,Female,Delhi,Mexican,False,2025-01-28,2,3.4,35-44
+CUST_00522,45,Female,Mumbai,Thai,True,2026-02-08,6,3.8,45-54
+CUST_00523,58,Male,Delhi,South Indian,False,2025-01-28,6,3.7,55+
+CUST_00524,24,Male,Delhi,South Indian,False,2025-03-27,6,4.3,18-24
+CUST_00525,30,Female,Pune,Indian,False,2026-03-15,3,4.7,25-34
+CUST_00526,40,Female,Bangalore,Continental,False,2025-05-19,3,4.8,35-44
+CUST_00527,46,Male,Delhi,Mexican,False,2026-04-18,5,3.1,45-54
+CUST_00528,61,Male,Kolkata,Indian,False,2025-07-06,3,4.1,55+
+CUST_00529,37,Female,Ahmedabad,Mexican,False,2025-02-21,5,3.4,35-44
+CUST_00530,43,Male,Mumbai,Chinese,False,2025-09-24,7,3.6,35-44
+CUST_00531,36,Male,Chennai,South Indian,False,2026-01-24,6,3.3,35-44
+CUST_00532,28,Male,Delhi,Mexican,False,2025-12-02,7,4.4,25-34
+CUST_00533,64,Male,Hyderabad,Chinese,True,2025-08-05,2,3.0,55+
+CUST_00534,58,Male,Mumbai,Chinese,False,2026-04-11,4,4.5,55+
+CUST_00535,49,Male,Hyderabad,Thai,False,2025-12-01,4,4.9,45-54
+CUST_00536,35,Female,Mumbai,Japanese,True,2025-12-12,4,3.3,35-44
+CUST_00537,46,Male,Pune,Mexican,False,2026-01-24,4,5.0,45-54
+CUST_00538,30,Female,Delhi,Mexican,False,2025-10-12,7,3.4,25-34
+CUST_00539,52,Male,Delhi,Italian,False,2026-03-08,6,4.1,45-54
+CUST_00540,28,Male,Kolkata,Japanese,True,2025-09-16,3,4.2,25-34
+CUST_00541,43,Male,Pune,Thai,False,2025-03-25,5,4.9,35-44
+CUST_00542,60,Male,Kolkata,Chinese,False,2026-04-27,3,3.3,55+
+CUST_00543,25,Female,Delhi,Continental,False,2025-01-20,4,4.3,25-34
+CUST_00544,37,Female,Chennai,Continental,False,2025-02-23,4,4.7,35-44
+CUST_00545,53,Male,Kolkata,Chinese,False,2025-12-25,4,3.1,45-54
+CUST_00546,59,Male,Pune,South Indian,False,2025-08-18,3,3.5,55+
+CUST_00547,44,Male,Bangalore,Thai,True,2025-03-12,4,4.8,35-44
+CUST_00548,44,Female,Bangalore,Indian,False,2025-02-11,4,3.7,35-44
+CUST_00549,37,Male,Mumbai,Italian,False,2025-02-01,7,4.2,35-44
+CUST_00550,31,Female,Ahmedabad,Thai,False,2025-09-11,3,3.7,25-34
+CUST_00551,21,Female,Kolkata,Chinese,False,2025-07-24,2,3.2,18-24
+CUST_00552,27,Female,Chennai,Thai,True,2025-01-21,7,3.4,25-34
+CUST_00553,51,Female,Delhi,Mexican,False,2025-06-06,2,3.9,45-54
+CUST_00554,38,Male,Chennai,Italian,True,2025-09-02,4,3.9,35-44
+CUST_00555,24,Female,Delhi,Continental,False,2025-05-10,7,4.0,18-24
+CUST_00556,32,Female,Mumbai,South Indian,False,2026-04-30,3,3.7,25-34
+CUST_00557,56,Male,Hyderabad,Italian,True,2025-04-28,4,4.9,55+
+CUST_00558,54,Male,Mumbai,Italian,False,2025-08-12,4,3.7,45-54
+CUST_00559,51,Female,Delhi,Mexican,False,2026-04-22,2,4.8,45-54
+CUST_00560,40,Male,Delhi,Thai,True,2025-09-20,4,3.3,35-44
+CUST_00561,58,Male,Delhi,Continental,False,2026-01-13,4,4.4,55+
+CUST_00562,57,Male,Delhi,Thai,False,2025-06-21,4,4.8,55+
+CUST_00563,39,Female,Ahmedabad,Continental,False,2025-04-28,5,4.3,35-44
+CUST_00564,58,Female,Bangalore,Chinese,False,2025-06-17,4,4.6,55+
+CUST_00565,44,Male,Mumbai,South Indian,False,2025-11-15,3,4.6,35-44
+CUST_00566,56,Male,Chennai,Continental,False,2025-04-21,6,4.3,55+
+CUST_00567,48,Female,Mumbai,Chinese,False,2025-01-27,1,4.2,45-54
+CUST_00568,28,Female,Bangalore,Indian,False,2025-11-16,2,3.6,25-34
+CUST_00569,42,Male,Bangalore,Indian,False,2026-01-20,7,4.0,35-44
+CUST_00570,53,Female,Bangalore,Chinese,False,2026-02-11,3,4.4,45-54
+CUST_00571,23,Female,Hyderabad,Japanese,False,2025-07-23,4,3.7,18-24
+CUST_00572,51,Female,Mumbai,Thai,False,2025-03-19,6,4.3,45-54
+CUST_00573,20,Male,Chennai,South Indian,False,2025-09-06,2,4.9,18-24
+CUST_00574,18,Male,Bangalore,Mexican,False,2025-04-15,1,4.5,18-24
+CUST_00575,35,Male,Chennai,Italian,True,2025-11-05,6,4.4,35-44
+CUST_00576,31,Female,Mumbai,South Indian,False,2025-05-04,4,4.6,25-34
+CUST_00577,50,Female,Mumbai,Indian,False,2025-02-12,4,4.0,45-54
+CUST_00578,57,Male,Chennai,Italian,False,2025-12-22,6,3.5,55+
+CUST_00579,60,Female,Mumbai,Mexican,False,2026-06-30,6,3.6,55+
+CUST_00580,39,Female,Chennai,Japanese,False,2026-03-15,3,4.9,35-44
+CUST_00581,33,Other,Hyderabad,Mexican,False,2026-01-15,2,3.1,25-34
+CUST_00582,29,Male,Delhi,Italian,False,2025-03-12,5,4.9,25-34
+CUST_00583,22,Female,Delhi,Continental,False,2026-06-03,2,3.7,18-24
+CUST_00584,58,Female,Delhi,Chinese,False,2025-12-16,6,3.8,55+
+CUST_00585,50,Female,Hyderabad,Japanese,True,2025-01-13,1,4.6,45-54
+CUST_00586,46,Male,Delhi,Chinese,False,2026-03-07,7,4.8,45-54
+CUST_00587,25,Male,Bangalore,Indian,True,2026-05-17,6,4.1,25-34
+CUST_00588,45,Male,Chennai,Chinese,False,2025-04-19,2,3.4,45-54
+CUST_00589,29,Male,Hyderabad,Chinese,False,2026-03-20,5,3.5,25-34
+CUST_00590,41,Female,Ahmedabad,Italian,False,2026-01-06,1,3.3,35-44
+CUST_00591,64,Female,Delhi,Continental,False,2026-04-16,3,3.9,55+
+CUST_00592,52,Female,Delhi,Chinese,False,2025-06-06,8,3.7,45-54
+CUST_00593,44,Female,Hyderabad,South Indian,False,2026-03-22,3,4.1,35-44
+CUST_00594,19,Female,Kolkata,Chinese,False,2025-06-30,5,4.2,18-24
+CUST_00595,39,Female,Mumbai,South Indian,False,2026-06-19,8,4.4,35-44
+CUST_00596,42,Male,Hyderabad,Thai,False,2025-10-04,3,3.5,35-44
+CUST_00597,53,Female,Delhi,Indian,False,2026-05-11,3,3.4,45-54
+CUST_00598,49,Male,Hyderabad,Chinese,True,2026-04-22,5,3.9,45-54
+CUST_00599,52,Female,Mumbai,Indian,False,2026-03-23,6,3.5,45-54
+CUST_00600,46,Male,Bangalore,Italian,False,2025-10-02,3,4.2,45-54
+CUST_00601,58,Male,Hyderabad,South Indian,False,2025-11-27,4,4.6,55+
+CUST_00602,64,Female,Mumbai,Japanese,False,2025-09-09,3,3.0,55+
+CUST_00603,60,Male,Mumbai,Thai,False,2025-03-30,4,3.4,55+
+CUST_00604,50,Female,Mumbai,South Indian,False,2025-10-13,6,4.8,45-54
+CUST_00605,36,Male,Delhi,South Indian,False,2026-04-07,4,4.2,35-44
+CUST_00606,18,Male,Ahmedabad,South Indian,True,2025-09-07,5,3.7,18-24
+CUST_00607,26,Male,Chennai,Japanese,False,2026-04-21,3,3.7,25-34
+CUST_00608,54,Female,Chennai,Thai,False,2026-01-24,6,4.7,45-54
+CUST_00609,55,Male,Bangalore,Mexican,True,2025-12-11,6,4.6,55+
+CUST_00610,35,Female,Delhi,Italian,False,2025-01-30,3,3.4,35-44
+CUST_00611,39,Male,Mumbai,Continental,True,2026-05-22,2,3.4,35-44
+CUST_00612,18,Female,Delhi,Chinese,False,2025-11-29,6,4.8,18-24
+CUST_00613,38,Male,Mumbai,Chinese,False,2025-07-06,3,4.5,35-44
+CUST_00614,20,Female,Hyderabad,Italian,False,2026-05-15,6,3.0,18-24
+CUST_00615,29,Male,Bangalore,Japanese,False,2025-08-06,2,4.5,25-34
+CUST_00616,41,Female,Delhi,South Indian,False,2025-12-30,6,4.6,35-44
+CUST_00617,63,Male,Bangalore,Japanese,False,2025-09-22,6,3.6,55+
+CUST_00618,26,Male,Pune,Japanese,False,2025-12-15,3,4.7,25-34
+CUST_00619,59,Female,Delhi,South Indian,False,2025-10-14,2,3.9,55+
+CUST_00620,39,Male,Bangalore,Japanese,False,2025-10-10,3,4.4,35-44
+CUST_00621,64,Male,Bangalore,Japanese,True,2025-01-11,4,4.4,55+
+CUST_00622,23,Female,Delhi,Continental,True,2026-06-14,6,3.0,18-24
+CUST_00623,60,Female,Pune,Chinese,False,2025-07-15,3,3.2,55+
+CUST_00624,53,Male,Mumbai,Italian,False,2025-03-29,4,3.1,45-54
+CUST_00625,36,Male,Chennai,South Indian,False,2025-09-05,3,4.1,35-44
+CUST_00626,64,Female,Pune,Italian,False,2026-02-21,4,4.4,55+
+CUST_00627,18,Male,Delhi,Thai,False,2026-05-16,3,4.3,18-24
+CUST_00628,64,Male,Hyderabad,South Indian,False,2025-09-04,4,3.9,55+
+CUST_00629,41,Female,Mumbai,Thai,False,2026-05-03,4,4.4,35-44
+CUST_00630,56,Male,Mumbai,Indian,False,2026-05-18,3,4.3,55+
+CUST_00631,20,Female,Hyderabad,South Indian,False,2026-04-04,5,4.8,18-24
+CUST_00632,45,Female,Chennai,Thai,False,2025-01-18,1,4.7,45-54
+CUST_00633,61,Male,Chennai,Continental,False,2025-04-06,6,4.6,55+
+CUST_00634,58,Female,Bangalore,Thai,False,2025-10-29,5,4.3,55+
+CUST_00635,35,Female,Mumbai,South Indian,True,2025-08-15,8,4.0,35-44
+CUST_00636,64,Female,Ahmedabad,Mexican,False,2026-02-19,3,5.0,55+
+CUST_00637,35,Male,Chennai,Japanese,False,2025-09-07,8,4.9,35-44
+CUST_00638,59,Male,Delhi,Continental,False,2025-11-10,9,4.2,55+
+CUST_00639,21,Male,Chennai,Chinese,False,2026-01-13,3,4.9,18-24
+CUST_00640,47,Male,Hyderabad,Indian,False,2026-04-30,2,4.3,45-54
+CUST_00641,51,Female,Bangalore,Indian,False,2026-06-28,1,3.9,45-54
+CUST_00642,54,Female,Delhi,South Indian,False,2025-12-19,2,3.3,45-54
+CUST_00643,54,Male,Hyderabad,Italian,False,2026-03-12,5,3.4,45-54
+CUST_00644,45,Male,Mumbai,South Indian,False,2025-12-05,5,4.2,45-54
+CUST_00645,43,Female,Bangalore,Continental,False,2025-12-27,3,3.6,35-44
+CUST_00646,30,Female,Delhi,South Indian,False,2026-04-10,3,3.5,25-34
+CUST_00647,19,Male,Kolkata,Mexican,False,2025-10-05,5,4.1,18-24
+CUST_00648,43,Female,Delhi,Chinese,False,2025-11-10,1,4.9,35-44
+CUST_00649,55,Female,Hyderabad,Italian,False,2025-09-15,3,3.6,55+
+CUST_00650,62,Female,Bangalore,Continental,False,2025-08-25,3,4.2,55+
+CUST_00651,39,Male,Chennai,Japanese,False,2025-05-04,2,4.5,35-44
+CUST_00652,23,Female,Chennai,Mexican,False,2025-07-17,7,3.9,18-24
+CUST_00653,18,Male,Delhi,Thai,False,2025-11-20,4,3.5,18-24
+CUST_00654,22,Female,Pune,South Indian,False,2025-05-03,6,4.8,18-24
+CUST_00655,57,Female,Bangalore,Thai,False,2025-07-09,2,4.7,55+
+CUST_00656,28,Female,Hyderabad,Continental,True,2025-07-16,8,5.0,25-34
+CUST_00657,60,Female,Chennai,Thai,False,2025-08-10,2,5.0,55+
+CUST_00658,52,Female,Delhi,Thai,True,2026-05-11,2,3.0,45-54
+CUST_00659,38,Female,Bangalore,Japanese,True,2025-10-11,2,3.6,35-44
+CUST_00660,39,Male,Chennai,Chinese,False,2026-06-22,2,3.6,35-44
+CUST_00661,32,Male,Mumbai,Italian,False,2025-10-17,6,4.7,25-34
+CUST_00662,27,Male,Mumbai,Thai,False,2025-04-13,5,3.9,25-34
+CUST_00663,27,Male,Bangalore,South Indian,False,2025-07-18,1,4.9,25-34
+CUST_00664,63,Male,Hyderabad,Japanese,False,2025-10-31,8,5.0,55+
+CUST_00665,29,Male,Pune,Chinese,False,2025-08-21,4,4.2,25-34
+CUST_00666,28,Female,Pune,Italian,False,2026-01-05,2,3.7,25-34
+CUST_00667,40,Female,Hyderabad,Japanese,False,2025-07-03,5,4.4,35-44
+CUST_00668,58,Male,Bangalore,Indian,False,2025-11-06,5,4.2,55+
+CUST_00669,32,Male,Mumbai,Chinese,False,2025-01-15,2,4.7,25-34
+CUST_00670,31,Male,Hyderabad,Indian,False,2025-05-10,8,4.4,25-34
+CUST_00671,29,Male,Hyderabad,Continental,False,2025-10-08,3,4.0,25-34
+CUST_00672,47,Female,Bangalore,Indian,False,2025-02-16,3,4.8,45-54
+CUST_00673,43,Female,Mumbai,Italian,True,2025-02-25,7,3.1,35-44
+CUST_00674,57,Male,Kolkata,Mexican,False,2025-10-27,4,4.8,55+
+CUST_00675,60,Male,Pune,Japanese,False,2025-05-10,4,3.8,55+
+CUST_00676,40,Male,Chennai,Italian,False,2026-05-18,5,3.4,35-44
+CUST_00677,34,Female,Ahmedabad,South Indian,False,2025-04-16,4,4.6,25-34
+CUST_00678,63,Male,Mumbai,Japanese,False,2025-01-13,4,4.3,55+
+CUST_00679,59,Female,Mumbai,Italian,False,2025-10-19,3,3.8,55+
+CUST_00680,51,Male,Mumbai,South Indian,True,2026-04-26,4,3.3,45-54
+CUST_00681,54,Female,Ahmedabad,Indian,False,2026-05-06,4,3.9,45-54
+CUST_00682,40,Female,Delhi,South Indian,False,2026-03-28,5,3.0,35-44
+CUST_00683,27,Male,Delhi,Thai,False,2025-12-15,4,5.0,25-34
+CUST_00684,43,Female,Mumbai,South Indian,True,2025-07-08,3,5.0,35-44
+CUST_00685,40,Male,Pune,Italian,False,2025-02-22,3,4.6,35-44
+CUST_00686,22,Male,Chennai,South Indian,True,2025-09-16,0,4.2,18-24
+CUST_00687,40,Male,Bangalore,Japanese,False,2026-05-05,2,4.4,35-44
+CUST_00688,51,Male,Chennai,South Indian,False,2025-04-27,9,5.0,45-54
+CUST_00689,34,Female,Delhi,Japanese,True,2025-03-08,5,4.1,25-34
+CUST_00690,49,Female,Delhi,Italian,False,2026-02-15,3,3.9,45-54
+CUST_00691,26,Male,Bangalore,Italian,False,2026-05-19,3,3.2,25-34
+CUST_00692,35,Male,Hyderabad,Italian,False,2025-03-17,5,3.3,35-44
+CUST_00693,30,Female,Chennai,Continental,False,2025-02-24,2,4.2,25-34
+CUST_00694,43,Female,Delhi,Mexican,False,2025-06-05,2,3.7,35-44
+CUST_00695,49,Male,Mumbai,South Indian,False,2025-06-02,5,3.6,45-54
+CUST_00696,45,Male,Delhi,South Indian,False,2025-11-08,5,4.9,45-54
+CUST_00697,25,Female,Delhi,Continental,False,2025-03-29,5,4.6,25-34
+CUST_00698,20,Female,Delhi,Italian,False,2025-09-12,1,4.6,18-24
+CUST_00699,42,Male,Delhi,Thai,False,2025-05-02,4,3.5,35-44
+CUST_00700,39,Female,Hyderabad,Chinese,False,2026-03-03,7,4.3,35-44
+CUST_00701,30,Male,Delhi,Indian,False,2025-08-20,2,3.2,25-34
+CUST_00702,25,Female,Mumbai,Continental,False,2026-06-20,5,4.8,25-34
+CUST_00703,64,Female,Bangalore,Indian,False,2026-01-25,4,4.4,55+
+CUST_00704,19,Female,Bangalore,Continental,False,2026-04-07,7,4.5,18-24
+CUST_00705,46,Female,Bangalore,Italian,True,2026-03-30,3,3.4,45-54
+CUST_00706,34,Male,Hyderabad,Indian,False,2025-11-01,3,4.5,25-34
+CUST_00707,40,Female,Delhi,Indian,False,2026-03-16,5,4.7,35-44
+CUST_00708,18,Female,Chennai,South Indian,False,2025-11-09,3,3.1,18-24
+CUST_00709,50,Female,Kolkata,South Indian,False,2025-03-03,3,3.3,45-54
+CUST_00710,18,Female,Mumbai,Italian,False,2025-04-12,1,3.3,18-24
+CUST_00711,34,Male,Bangalore,Thai,False,2025-08-01,3,4.9,25-34
+CUST_00712,23,Male,Delhi,Thai,False,2025-08-05,8,4.0,18-24
+CUST_00713,58,Male,Delhi,South Indian,True,2025-09-28,3,4.9,55+
+CUST_00714,57,Female,Delhi,Indian,False,2025-03-25,1,3.4,55+
+CUST_00715,45,Female,Kolkata,Italian,False,2025-06-10,6,3.7,45-54
+CUST_00716,60,Male,Bangalore,Chinese,False,2025-09-03,8,4.4,55+
+CUST_00717,63,Female,Delhi,Continental,True,2025-06-27,3,3.9,55+
+CUST_00718,18,Male,Ahmedabad,Indian,False,2025-03-18,7,3.4,18-24
+CUST_00719,33,Male,Mumbai,Italian,True,2025-06-10,2,3.3,25-34
+CUST_00720,29,Male,Delhi,Thai,False,2025-01-03,7,4.0,25-34
+CUST_00721,41,Male,Hyderabad,Chinese,False,2026-02-23,4,3.5,35-44
+CUST_00722,36,Female,Chennai,Chinese,False,2026-04-07,4,4.6,35-44
+CUST_00723,52,Male,Hyderabad,Chinese,False,2026-04-27,6,4.7,45-54
+CUST_00724,37,Female,Delhi,South Indian,False,2025-10-26,0,3.5,35-44
+CUST_00725,42,Female,Kolkata,Thai,False,2025-02-03,6,4.7,35-44
+CUST_00726,39,Male,Bangalore,Mexican,False,2025-08-26,3,4.0,35-44
+CUST_00727,63,Female,Bangalore,Thai,False,2025-10-23,4,3.8,55+
+CUST_00728,23,Female,Delhi,Japanese,True,2025-10-17,3,4.2,18-24
+CUST_00729,38,Female,Bangalore,Japanese,False,2026-04-10,5,3.8,35-44
+CUST_00730,27,Male,Mumbai,Japanese,False,2025-03-14,2,4.6,25-34
+CUST_00731,62,Male,Delhi,Italian,False,2025-08-28,4,3.4,55+
+CUST_00732,26,Female,Chennai,South Indian,True,2025-09-28,7,4.3,25-34
+CUST_00733,45,Male,Pune,Thai,False,2025-07-22,2,3.6,45-54
+CUST_00734,45,Other,Delhi,Japanese,False,2026-03-12,4,3.5,45-54
+CUST_00735,51,Male,Mumbai,Mexican,False,2025-04-28,4,3.4,45-54
+CUST_00736,54,Female,Delhi,Japanese,False,2025-08-19,6,4.8,45-54
+CUST_00737,32,Female,Bangalore,Thai,False,2025-06-02,3,3.3,25-34
+CUST_00738,34,Male,Mumbai,Indian,False,2025-09-30,3,3.7,25-34
+CUST_00739,62,Female,Delhi,Japanese,True,2025-05-26,4,4.2,55+
+CUST_00740,44,Female,Delhi,South Indian,False,2025-03-15,3,3.2,35-44
+CUST_00741,39,Male,Bangalore,Chinese,True,2025-03-03,7,4.0,35-44
+CUST_00742,37,Male,Hyderabad,Chinese,False,2025-06-19,4,4.1,35-44
+CUST_00743,31,Female,Delhi,Mexican,True,2025-11-11,1,4.2,25-34
+CUST_00744,60,Male,Hyderabad,Italian,False,2025-10-23,4,4.1,55+
+CUST_00745,49,Female,Mumbai,South Indian,False,2026-03-26,4,3.7,45-54
+CUST_00746,60,Female,Bangalore,Mexican,False,2025-05-08,5,4.4,55+
+CUST_00747,31,Male,Mumbai,Continental,False,2026-04-25,7,3.3,25-34
+CUST_00748,45,Female,Mumbai,Chinese,False,2025-11-08,6,4.8,45-54
+CUST_00749,48,Male,Delhi,Japanese,False,2026-02-17,8,4.9,45-54
+CUST_00750,62,Female,Mumbai,Mexican,False,2025-10-06,6,4.3,55+
+CUST_00751,33,Male,Chennai,Chinese,True,2026-05-28,2,4.6,25-34
+CUST_00752,56,Female,Pune,Thai,False,2026-05-21,6,3.0,55+
+CUST_00753,63,Male,Chennai,Continental,False,2026-03-25,6,4.7,55+
+CUST_00754,57,Female,Delhi,Chinese,False,2025-03-24,1,3.7,55+
+CUST_00755,20,Female,Hyderabad,South Indian,False,2025-02-10,3,3.8,18-24
+CUST_00756,58,Male,Pune,South Indian,False,2026-03-19,3,4.9,55+
+CUST_00757,37,Male,Hyderabad,Thai,False,2025-11-27,4,3.1,35-44
+CUST_00758,29,Female,Hyderabad,Indian,False,2025-09-14,5,3.4,25-34
+CUST_00759,27,Female,Delhi,Japanese,False,2025-01-27,0,4.8,25-34
+CUST_00760,42,Male,Mumbai,South Indian,False,2025-04-04,4,4.6,35-44
+CUST_00761,59,Male,Delhi,Japanese,False,2025-08-23,2,3.1,55+
+CUST_00762,52,Female,Mumbai,Italian,False,2025-01-22,3,4.7,45-54
+CUST_00763,39,Female,Mumbai,South Indian,False,2025-10-03,4,3.6,35-44
+CUST_00764,59,Female,Mumbai,South Indian,False,2025-02-11,7,3.8,55+
+CUST_00765,43,Female,Chennai,Italian,False,2025-06-29,5,3.1,35-44
+CUST_00766,29,Male,Bangalore,Continental,False,2026-04-27,2,3.6,25-34
+CUST_00767,44,Female,Chennai,Japanese,False,2026-06-16,8,4.1,35-44
+CUST_00768,57,Male,Delhi,Italian,False,2026-03-29,3,3.4,55+
+CUST_00769,53,Female,Kolkata,South Indian,False,2025-10-12,3,3.1,45-54
+CUST_00770,64,Female,Mumbai,South Indian,False,2025-07-05,2,4.3,55+
+CUST_00771,54,Female,Bangalore,Japanese,False,2026-03-23,4,3.3,45-54
+CUST_00772,59,Male,Delhi,Japanese,False,2026-05-19,2,3.3,55+
+CUST_00773,23,Male,Delhi,South Indian,False,2025-04-04,6,3.1,18-24
+CUST_00774,53,Female,Delhi,Chinese,False,2026-04-27,4,4.3,45-54
+CUST_00775,46,Male,Delhi,Japanese,False,2025-12-23,6,3.5,45-54
+CUST_00776,36,Female,Pune,Japanese,False,2026-02-23,10,4.3,35-44
+CUST_00777,21,Male,Mumbai,Japanese,False,2025-12-08,5,3.7,18-24
+CUST_00778,21,Male,Mumbai,Chinese,False,2025-11-25,6,4.0,18-24
+CUST_00779,21,Female,Chennai,South Indian,False,2025-04-18,3,4.0,18-24
+CUST_00780,48,Male,Bangalore,Chinese,False,2025-06-14,2,3.9,45-54
+CUST_00781,19,Male,Bangalore,South Indian,False,2025-12-04,3,3.0,18-24
+CUST_00782,48,Female,Pune,Japanese,True,2026-02-26,5,4.2,45-54
+CUST_00783,64,Female,Mumbai,Indian,False,2026-05-23,0,3.4,55+
+CUST_00784,64,Male,Chennai,Chinese,False,2025-10-23,3,4.0,55+
+CUST_00785,36,Male,Ahmedabad,Italian,False,2026-02-15,5,3.3,35-44
+CUST_00786,20,Female,Bangalore,Chinese,False,2025-02-07,4,3.0,18-24
+CUST_00787,47,Male,Mumbai,South Indian,False,2026-04-11,5,4.4,45-54
+CUST_00788,57,Male,Hyderabad,Continental,False,2025-04-01,4,3.1,55+
+CUST_00789,33,Male,Mumbai,Chinese,True,2025-11-19,3,4.5,25-34
+CUST_00790,51,Male,Bangalore,Mexican,False,2025-09-16,8,3.9,45-54
+CUST_00791,26,Female,Chennai,South Indian,True,2025-11-28,7,4.3,25-34
+CUST_00792,18,Female,Chennai,Continental,False,2025-04-29,8,4.3,18-24
+CUST_00793,31,Male,Chennai,Thai,False,2026-02-18,3,4.1,25-34
+CUST_00794,41,Male,Bangalore,Thai,False,2026-06-11,2,3.7,35-44
+CUST_00795,29,Male,Pune,Thai,False,2025-01-02,6,4.1,25-34
+CUST_00796,33,Other,Hyderabad,South Indian,False,2026-04-19,4,4.4,25-34
+CUST_00797,35,Female,Delhi,Thai,False,2026-02-28,5,3.4,35-44
+CUST_00798,21,Male,Mumbai,Japanese,True,2025-02-25,7,4.5,18-24
+CUST_00799,33,Female,Pune,Thai,False,2025-07-12,10,3.3,25-34
+CUST_00800,61,Female,Bangalore,Mexican,False,2026-06-15,3,3.2,55+
+CUST_00801,40,Female,Chennai,Japanese,False,2026-01-06,5,3.0,35-44
+CUST_00802,52,Male,Delhi,Continental,True,2026-05-26,5,4.6,45-54
+CUST_00803,30,Female,Bangalore,Indian,False,2026-03-29,5,4.6,25-34
+CUST_00804,48,Male,Hyderabad,Mexican,False,2025-02-22,3,3.8,45-54
+CUST_00805,18,Male,Mumbai,Italian,False,2025-07-28,5,5.0,18-24
+CUST_00806,28,Female,Pune,Italian,False,2025-10-01,7,3.9,25-34
+CUST_00807,64,Male,Bangalore,Mexican,False,2025-05-15,6,3.6,55+
+CUST_00808,50,Female,Mumbai,Italian,True,2025-10-22,6,4.1,45-54
+CUST_00809,37,Female,Pune,Continental,False,2026-03-25,4,3.2,35-44
+CUST_00810,60,Male,Mumbai,Continental,False,2026-05-12,4,4.0,55+
+CUST_00811,62,Female,Mumbai,Mexican,False,2025-05-05,1,4.0,55+
+CUST_00812,43,Male,Delhi,Indian,True,2025-01-30,5,3.1,35-44
+CUST_00813,56,Female,Bangalore,Japanese,False,2025-09-03,9,4.3,55+
+CUST_00814,44,Female,Bangalore,Italian,False,2025-06-12,3,3.5,35-44
+CUST_00815,55,Female,Mumbai,Italian,False,2025-11-15,3,4.2,55+
+CUST_00816,64,Male,Hyderabad,Thai,False,2025-01-15,4,4.4,55+
+CUST_00817,55,Female,Delhi,Thai,False,2026-02-22,7,4.5,55+
+CUST_00818,33,Male,Chennai,Continental,False,2025-04-06,2,4.9,25-34
+CUST_00819,21,Male,Chennai,Continental,False,2025-08-19,4,3.7,18-24
+CUST_00820,58,Male,Mumbai,Mexican,False,2025-04-27,4,3.7,55+
+CUST_00821,42,Male,Delhi,Mexican,False,2026-04-18,4,3.1,35-44
+CUST_00822,45,Other,Bangalore,Continental,False,2025-05-01,3,4.7,45-54
+CUST_00823,63,Female,Delhi,Chinese,False,2025-06-07,4,4.2,55+
+CUST_00824,55,Male,Delhi,Japanese,False,2026-05-26,9,4.9,55+
+CUST_00825,58,Male,Delhi,South Indian,False,2025-10-26,3,3.8,55+
+CUST_00826,50,Male,Delhi,Chinese,True,2026-06-06,5,4.2,45-54
+CUST_00827,43,Male,Mumbai,Chinese,False,2025-10-07,3,4.2,35-44
+CUST_00828,41,Female,Bangalore,Italian,False,2026-03-02,4,4.2,35-44
+CUST_00829,35,Male,Pune,Italian,False,2026-05-10,6,3.9,35-44
+CUST_00830,21,Female,Bangalore,Continental,False,2026-04-29,5,4.2,18-24
+CUST_00831,21,Male,Delhi,Chinese,False,2025-09-07,7,4.7,18-24
+CUST_00832,35,Male,Mumbai,Thai,True,2026-04-13,3,4.8,35-44
+CUST_00833,40,Male,Delhi,Mexican,True,2025-05-29,3,3.8,35-44
+CUST_00834,54,Male,Ahmedabad,Continental,False,2026-01-28,2,4.0,45-54
+CUST_00835,54,Female,Hyderabad,Japanese,False,2025-07-15,7,3.2,45-54
+CUST_00836,46,Male,Mumbai,Japanese,False,2026-06-05,2,3.0,45-54
+CUST_00837,61,Male,Bangalore,Italian,False,2025-05-20,4,4.5,55+
+CUST_00838,50,Female,Mumbai,Italian,False,2025-03-13,2,4.2,45-54
+CUST_00839,51,Female,Bangalore,Mexican,False,2025-10-10,3,3.9,45-54
+CUST_00840,38,Male,Kolkata,Continental,False,2026-03-01,5,3.8,35-44
+CUST_00841,26,Male,Chennai,Thai,False,2025-12-15,4,4.5,25-34
+CUST_00842,49,Female,Bangalore,Chinese,True,2026-06-04,4,3.9,45-54
+CUST_00843,64,Male,Chennai,Thai,False,2025-10-01,2,3.1,55+
+CUST_00844,64,Female,Kolkata,Italian,False,2025-01-03,8,4.7,55+
+CUST_00845,37,Male,Mumbai,Italian,True,2025-10-17,2,4.1,35-44
+CUST_00846,30,Other,Mumbai,Continental,False,2025-11-02,2,3.1,25-34
+CUST_00847,32,Female,Pune,Continental,False,2026-05-17,5,4.3,25-34
+CUST_00848,18,Male,Bangalore,South Indian,False,2025-06-02,3,3.2,18-24
+CUST_00849,29,Other,Chennai,Continental,False,2026-04-03,2,3.5,25-34
+CUST_00850,40,Other,Hyderabad,Italian,True,2026-05-11,1,4.9,35-44
+CUST_00851,60,Female,Mumbai,Mexican,False,2025-12-20,3,3.1,55+
+CUST_00852,44,Female,Delhi,South Indian,True,2025-12-07,4,3.7,35-44
+CUST_00853,63,Other,Mumbai,Chinese,False,2026-01-22,1,4.5,55+
+CUST_00854,56,Male,Delhi,Indian,True,2026-04-12,8,4.2,55+
+CUST_00855,35,Female,Bangalore,Chinese,False,2025-11-26,3,4.6,35-44
+CUST_00856,30,Male,Delhi,Italian,False,2025-07-13,3,3.6,25-34
+CUST_00857,43,Female,Pune,Mexican,False,2025-09-02,8,4.3,35-44
+CUST_00858,60,Female,Mumbai,Continental,False,2026-01-28,4,4.6,55+
+CUST_00859,45,Male,Bangalore,Italian,False,2025-08-28,6,3.1,45-54
+CUST_00860,54,Female,Mumbai,Italian,False,2026-02-25,1,4.4,45-54
+CUST_00861,40,Female,Mumbai,Mexican,False,2025-02-14,2,3.8,35-44
+CUST_00862,63,Male,Chennai,Continental,False,2025-11-22,4,4.8,55+
+CUST_00863,42,Male,Delhi,Italian,False,2026-04-30,5,4.0,35-44
+CUST_00864,40,Female,Kolkata,Chinese,False,2026-01-26,1,3.3,35-44
+CUST_00865,56,Female,Bangalore,Chinese,True,2026-01-31,3,4.7,55+
+CUST_00866,59,Male,Mumbai,Italian,False,2025-06-05,4,4.4,55+
+CUST_00867,62,Male,Mumbai,South Indian,False,2026-05-23,7,4.0,55+
+CUST_00868,40,Male,Kolkata,Mexican,False,2025-02-07,5,4.0,35-44
+CUST_00869,42,Male,Delhi,Italian,False,2025-05-10,7,4.5,35-44
+CUST_00870,62,Male,Mumbai,Italian,False,2026-05-30,8,3.9,55+
+CUST_00871,41,Male,Hyderabad,Mexican,False,2025-12-06,1,4.0,35-44
+CUST_00872,18,Male,Mumbai,Mexican,True,2025-04-13,1,4.2,18-24
+CUST_00873,33,Female,Chennai,Italian,False,2026-03-27,6,3.6,25-34
+CUST_00874,26,Female,Mumbai,Chinese,False,2025-04-13,9,4.6,25-34
+CUST_00875,35,Male,Bangalore,Continental,False,2026-06-23,4,3.1,35-44
+CUST_00876,58,Male,Mumbai,Chinese,False,2026-04-13,2,4.4,55+
+CUST_00877,35,Male,Delhi,Indian,False,2025-01-16,4,3.8,35-44
+CUST_00878,57,Female,Chennai,Mexican,False,2025-05-28,6,3.7,55+
+CUST_00879,22,Male,Bangalore,Chinese,False,2026-02-24,2,4.6,18-24
+CUST_00880,21,Other,Chennai,Japanese,True,2025-06-08,4,4.3,18-24
+CUST_00881,63,Male,Mumbai,Italian,False,2025-03-18,3,3.3,55+
+CUST_00882,30,Male,Delhi,Thai,False,2026-04-26,4,4.5,25-34
+CUST_00883,24,Male,Delhi,Japanese,False,2025-09-29,4,4.6,18-24
+CUST_00884,38,Female,Delhi,Italian,False,2025-12-13,5,3.3,35-44
+CUST_00885,48,Female,Delhi,Indian,False,2026-02-12,2,4.9,45-54
+CUST_00886,56,Female,Chennai,Italian,False,2025-03-24,8,3.9,55+
+CUST_00887,37,Female,Delhi,Italian,True,2025-12-03,3,4.0,35-44
+CUST_00888,33,Female,Pune,Japanese,False,2026-01-25,4,4.8,25-34
+CUST_00889,31,Male,Kolkata,Japanese,True,2025-11-21,5,4.6,25-34
+CUST_00890,33,Male,Mumbai,South Indian,True,2026-05-15,8,4.2,25-34
+CUST_00891,36,Female,Delhi,Thai,False,2025-02-06,2,4.6,35-44
+CUST_00892,53,Male,Hyderabad,Japanese,False,2025-03-12,3,3.7,45-54
+CUST_00893,34,Female,Delhi,Japanese,True,2025-08-29,5,3.6,25-34
+CUST_00894,20,Male,Mumbai,Italian,False,2025-10-22,3,3.7,18-24
+CUST_00895,56,Female,Chennai,Mexican,False,2025-08-21,2,4.6,55+
+CUST_00896,24,Male,Hyderabad,Japanese,True,2025-04-03,1,4.3,18-24
+CUST_00897,52,Female,Mumbai,South Indian,False,2026-03-21,2,4.9,45-54
+CUST_00898,33,Female,Delhi,Indian,False,2025-04-11,4,4.4,25-34
+CUST_00899,50,Male,Chennai,Indian,False,2025-04-13,1,4.0,45-54
+CUST_00900,22,Other,Kolkata,Japanese,True,2026-03-31,3,4.7,18-24
+CUST_00901,48,Male,Delhi,Mexican,True,2025-06-20,4,3.8,45-54
+CUST_00902,31,Male,Mumbai,Italian,False,2025-11-03,4,4.3,25-34
+CUST_00903,25,Female,Hyderabad,Thai,False,2025-01-30,1,4.6,25-34
+CUST_00904,49,Female,Ahmedabad,Mexican,False,2025-02-17,6,5.0,45-54
+CUST_00905,32,Male,Delhi,Chinese,False,2025-11-29,4,3.9,25-34
+CUST_00906,48,Male,Delhi,Continental,False,2025-02-27,6,3.5,45-54
+CUST_00907,34,Male,Pune,Continental,False,2025-10-28,3,3.8,25-34
+CUST_00908,39,Male,Pune,Chinese,False,2026-01-03,8,3.3,35-44
+CUST_00909,33,Male,Chennai,Thai,False,2026-01-19,6,4.5,25-34
+CUST_00910,34,Other,Bangalore,Mexican,True,2026-03-18,4,3.8,25-34
+CUST_00911,54,Male,Delhi,Indian,True,2025-05-30,3,4.1,45-54
+CUST_00912,39,Female,Chennai,Japanese,False,2025-09-08,5,4.5,35-44
+CUST_00913,50,Female,Kolkata,Indian,False,2026-06-28,4,3.6,45-54
+CUST_00914,35,Male,Chennai,Indian,False,2026-02-26,5,3.2,35-44
+CUST_00915,53,Female,Mumbai,Chinese,True,2025-07-04,4,3.4,45-54
+CUST_00916,30,Male,Bangalore,Indian,False,2025-06-24,6,4.4,25-34
+CUST_00917,59,Female,Chennai,Continental,True,2025-06-29,4,4.6,55+
+CUST_00918,21,Other,Bangalore,Chinese,False,2025-03-22,6,3.6,18-24
+CUST_00919,18,Female,Delhi,Chinese,True,2026-01-27,3,4.4,18-24
+CUST_00920,31,Female,Delhi,Chinese,False,2025-09-04,6,4.6,25-34
+CUST_00921,37,Female,Mumbai,Indian,False,2026-05-25,2,3.3,35-44
+CUST_00922,64,Male,Bangalore,Indian,False,2025-05-27,7,3.8,55+
+CUST_00923,47,Male,Ahmedabad,Continental,False,2025-08-26,4,3.7,45-54
+CUST_00924,51,Female,Delhi,Chinese,False,2026-04-18,9,3.6,45-54
+CUST_00925,31,Female,Pune,South Indian,True,2025-09-18,4,4.3,25-34
+CUST_00926,36,Male,Mumbai,Chinese,False,2026-04-16,10,4.6,35-44
+CUST_00927,46,Male,Mumbai,Indian,False,2025-09-19,8,4.7,45-54
+CUST_00928,61,Male,Bangalore,Chinese,False,2025-01-10,4,4.5,55+
+CUST_00929,27,Male,Mumbai,Italian,False,2026-04-22,7,3.4,25-34
+CUST_00930,24,Male,Pune,Thai,False,2025-10-22,3,4.1,18-24
+CUST_00931,24,Female,Hyderabad,Chinese,False,2025-06-11,7,4.0,18-24
+CUST_00932,23,Female,Delhi,Indian,False,2025-03-17,6,4.1,18-24
+CUST_00933,23,Female,Delhi,Indian,True,2026-03-29,4,3.5,18-24
+CUST_00934,24,Male,Ahmedabad,Indian,True,2025-12-20,4,3.4,18-24
+CUST_00935,44,Female,Mumbai,Japanese,False,2025-11-03,2,4.0,35-44
+CUST_00936,55,Male,Chennai,Chinese,False,2026-03-11,1,4.3,55+
+CUST_00937,46,Male,Kolkata,Japanese,False,2025-09-14,7,4.7,45-54
+CUST_00938,48,Female,Mumbai,Indian,False,2026-04-13,4,4.3,45-54
+CUST_00939,23,Male,Mumbai,Chinese,False,2025-11-06,5,4.1,18-24
+CUST_00940,34,Male,Ahmedabad,Japanese,False,2025-07-23,1,4.3,25-34
+CUST_00941,33,Female,Delhi,Italian,False,2026-01-29,4,3.4,25-34
+CUST_00942,19,Male,Bangalore,Thai,False,2026-05-10,3,4.4,18-24
+CUST_00943,39,Male,Bangalore,Italian,True,2025-04-20,11,4.2,35-44
+CUST_00944,60,Male,Mumbai,South Indian,True,2025-08-31,6,3.6,55+
+CUST_00945,34,Male,Pune,South Indian,False,2026-01-26,2,3.2,25-34
+CUST_00946,26,Male,Mumbai,Chinese,False,2026-01-03,6,3.4,25-34
+CUST_00947,28,Male,Bangalore,Thai,False,2025-10-30,4,4.1,25-34
+CUST_00948,35,Female,Delhi,Thai,False,2025-10-30,5,3.7,35-44
+CUST_00949,46,Male,Kolkata,Mexican,False,2025-01-23,7,4.2,45-54
+CUST_00950,61,Male,Delhi,Japanese,False,2026-02-10,4,4.7,55+
+CUST_00951,43,Female,Bangalore,Chinese,False,2025-10-09,5,4.2,35-44
+CUST_00952,49,Male,Delhi,Chinese,False,2025-01-09,4,3.6,45-54
+CUST_00953,29,Female,Delhi,Italian,False,2025-02-20,4,4.7,25-34
+CUST_00954,25,Female,Kolkata,Japanese,False,2026-05-24,2,4.1,25-34
+CUST_00955,41,Female,Delhi,Indian,True,2025-10-21,5,3.1,35-44
+CUST_00956,33,Male,Chennai,Mexican,False,2025-08-24,6,4.0,25-34
+CUST_00957,24,Female,Bangalore,Chinese,False,2025-12-27,4,4.0,18-24
+CUST_00958,62,Male,Mumbai,Mexican,False,2025-08-13,0,4.9,55+
+CUST_00959,31,Female,Delhi,Chinese,False,2025-07-14,4,4.4,25-34
+CUST_00960,41,Female,Hyderabad,Thai,False,2025-09-14,4,3.0,35-44
+CUST_00961,19,Male,Delhi,Thai,False,2025-05-21,3,4.7,18-24
+CUST_00962,19,Male,Chennai,Italian,False,2025-04-10,5,4.4,18-24
+CUST_00963,53,Male,Delhi,Mexican,False,2025-02-10,6,3.1,45-54
+CUST_00964,53,Male,Delhi,Italian,False,2025-11-13,5,3.7,45-54
+CUST_00965,57,Male,Pune,Continental,False,2026-03-28,3,4.7,55+
+CUST_00966,54,Female,Pune,Italian,False,2025-02-04,7,4.7,45-54
+CUST_00967,22,Female,Bangalore,Japanese,True,2026-01-09,5,3.6,18-24
+CUST_00968,43,Male,Delhi,Italian,False,2025-05-15,1,4.9,35-44
+CUST_00969,52,Male,Delhi,Chinese,False,2025-04-03,3,4.1,45-54
+CUST_00970,63,Female,Pune,Indian,True,2025-10-30,3,3.6,55+
+CUST_00971,18,Female,Hyderabad,Thai,False,2025-12-01,3,4.4,18-24
+CUST_00972,21,Female,Mumbai,Mexican,False,2026-03-02,4,4.2,18-24
+CUST_00973,25,Male,Bangalore,Indian,False,2025-06-29,3,4.0,25-34
+CUST_00974,25,Male,Mumbai,Mexican,False,2025-07-25,5,4.6,25-34
+CUST_00975,25,Female,Delhi,Thai,False,2025-05-16,1,3.9,25-34
+CUST_00976,38,Female,Mumbai,Continental,False,2026-01-10,6,4.8,35-44
+CUST_00977,24,Male,Chennai,Continental,True,2026-06-28,6,3.9,18-24
+CUST_00978,61,Female,Mumbai,Continental,False,2026-05-29,3,4.5,55+
+CUST_00979,41,Male,Hyderabad,Thai,False,2025-10-07,2,4.2,35-44
+CUST_00980,56,Male,Bangalore,South Indian,False,2025-06-18,2,3.9,55+
+CUST_00981,29,Male,Mumbai,Continental,False,2025-09-21,4,3.8,25-34
+CUST_00982,59,Female,Mumbai,Chinese,False,2026-05-09,6,3.8,55+
+CUST_00983,40,Male,Mumbai,South Indian,False,2025-10-30,5,3.5,35-44
+CUST_00984,64,Male,Mumbai,Italian,False,2025-12-13,4,3.7,55+
+CUST_00985,35,Male,Delhi,Thai,False,2025-04-28,5,3.5,35-44
+CUST_00986,40,Female,Ahmedabad,Chinese,False,2026-04-25,4,4.0,35-44
+CUST_00987,30,Female,Delhi,Italian,False,2025-03-19,5,3.6,25-34
+CUST_00988,40,Male,Mumbai,Mexican,False,2025-05-25,3,3.1,35-44
+CUST_00989,25,Male,Bangalore,Chinese,False,2025-08-20,7,3.5,25-34
+CUST_00990,46,Male,Bangalore,Chinese,False,2026-02-11,5,3.2,45-54
+CUST_00991,28,Female,Bangalore,Thai,False,2026-01-10,6,3.2,25-34
+CUST_00992,54,Male,Pune,Mexican,True,2025-04-03,3,4.2,45-54
+CUST_00993,26,Male,Pune,Thai,False,2026-02-09,4,4.4,25-34
+CUST_00994,58,Male,Delhi,Chinese,False,2025-01-15,4,4.3,55+
+CUST_00995,45,Female,Delhi,South Indian,False,2025-09-28,8,3.7,45-54
+CUST_00996,21,Male,Hyderabad,Thai,False,2025-05-07,5,3.9,18-24
+CUST_00997,62,Male,Ahmedabad,South Indian,False,2026-04-11,4,4.9,55+
+CUST_00998,47,Female,Bangalore,South Indian,False,2026-01-13,3,3.6,45-54
+CUST_00999,61,Male,Chennai,South Indian,True,2025-09-26,3,4.0,55+
+CUST_01000,22,Female,Delhi,South Indian,True,2026-01-26,4,5.0,18-24
+CUST_01001,51,Female,Kolkata,South Indian,False,2026-01-16,8,3.2,45-54
+CUST_01002,55,Male,Delhi,South Indian,False,2025-04-21,1,4.8,55+
+CUST_01003,27,Male,Delhi,Japanese,True,2025-08-28,2,3.8,25-34
+CUST_01004,27,Male,Ahmedabad,Chinese,True,2026-04-28,5,3.7,25-34
+CUST_01005,40,Male,Chennai,Italian,False,2025-01-26,3,4.7,35-44
+CUST_01006,60,Female,Mumbai,Japanese,False,2025-12-02,4,4.2,55+
+CUST_01007,46,Female,Bangalore,Japanese,False,2025-08-15,4,4.8,45-54
+CUST_01008,22,Male,Delhi,South Indian,False,2025-03-06,4,3.8,18-24
+CUST_01009,44,Female,Bangalore,Continental,False,2026-04-21,4,4.2,35-44
+CUST_01010,55,Female,Mumbai,Italian,False,2025-11-06,2,4.0,55+
+CUST_01011,19,Female,Mumbai,Continental,True,2026-02-23,7,3.7,18-24
+CUST_01012,57,Male,Bangalore,Japanese,False,2025-04-30,3,4.4,55+
+CUST_01013,33,Female,Hyderabad,Italian,False,2025-05-24,9,4.0,25-34
+CUST_01014,61,Male,Chennai,Indian,True,2025-02-16,6,4.7,55+
+CUST_01015,29,Female,Delhi,Japanese,False,2025-02-08,4,3.4,25-34
+CUST_01016,37,Male,Ahmedabad,Thai,False,2025-11-08,4,4.0,35-44
+CUST_01017,54,Female,Delhi,Chinese,False,2026-05-20,4,4.0,45-54
+CUST_01018,37,Female,Bangalore,Japanese,True,2025-04-29,3,3.2,35-44
+CUST_01019,51,Female,Mumbai,South Indian,False,2025-04-10,5,3.4,45-54
+CUST_01020,22,Male,Delhi,Italian,False,2025-08-29,7,3.1,18-24
+CUST_01021,25,Male,Ahmedabad,Continental,False,2025-05-19,10,3.1,25-34
+CUST_01022,26,Male,Mumbai,Continental,False,2026-02-02,4,4.2,25-34
+CUST_01023,55,Male,Delhi,Chinese,True,2026-04-10,4,4.5,55+
+CUST_01024,50,Female,Chennai,Mexican,False,2026-01-15,4,3.8,45-54
+CUST_01025,23,Female,Chennai,Italian,False,2026-03-06,7,4.9,18-24
+CUST_01026,63,Male,Bangalore,Continental,False,2025-06-08,4,3.5,55+
+CUST_01027,38,Female,Delhi,Thai,False,2026-03-01,3,4.4,35-44
+CUST_01028,62,Male,Bangalore,Indian,False,2025-04-12,2,4.5,55+
+CUST_01029,62,Male,Delhi,Mexican,True,2026-05-17,3,4.7,55+
+CUST_01030,40,Male,Delhi,Indian,False,2026-02-22,3,3.0,35-44
+CUST_01031,19,Female,Hyderabad,Continental,False,2025-10-14,2,4.9,18-24
+CUST_01032,37,Female,Mumbai,Chinese,False,2025-02-03,3,4.4,35-44
+CUST_01033,34,Male,Pune,Continental,False,2026-01-15,4,4.1,25-34
+CUST_01034,53,Male,Mumbai,Indian,False,2025-08-11,1,4.0,45-54
+CUST_01035,41,Male,Delhi,South Indian,False,2026-03-31,1,4.0,35-44
+CUST_01036,36,Female,Delhi,South Indian,False,2026-04-01,4,3.0,35-44
+CUST_01037,18,Male,Bangalore,Japanese,True,2025-08-30,4,3.7,18-24
+CUST_01038,52,Female,Delhi,Mexican,False,2026-01-07,7,3.4,45-54
+CUST_01039,62,Male,Delhi,Italian,False,2025-04-12,4,3.4,55+
+CUST_01040,39,Male,Ahmedabad,Italian,False,2026-01-12,6,4.3,35-44
+CUST_01041,46,Male,Bangalore,Japanese,False,2026-01-03,3,3.7,45-54
+CUST_01042,35,Male,Delhi,Indian,False,2025-03-04,1,3.5,35-44
+CUST_01043,52,Female,Bangalore,Continental,False,2026-02-12,4,4.9,45-54
+CUST_01044,42,Female,Mumbai,Continental,False,2025-10-10,3,3.5,35-44
+CUST_01045,37,Male,Mumbai,Japanese,False,2025-07-14,6,3.7,35-44
+CUST_01046,48,Male,Delhi,Chinese,True,2025-05-06,3,4.5,45-54
+CUST_01047,56,Male,Bangalore,Continental,False,2026-04-11,3,4.6,55+
+CUST_01048,24,Female,Hyderabad,Mexican,False,2025-04-04,4,4.0,18-24
+CUST_01049,51,Male,Bangalore,Chinese,False,2025-08-06,4,3.8,45-54
+CUST_01050,32,Male,Pune,Chinese,False,2025-01-22,0,4.9,25-34
+CUST_01051,39,Female,Mumbai,Mexican,False,2025-02-21,3,3.4,35-44
+CUST_01052,30,Female,Mumbai,Japanese,False,2025-12-08,4,3.5,25-34
+CUST_01053,36,Male,Hyderabad,Italian,False,2025-09-07,5,3.3,35-44
+CUST_01054,55,Female,Kolkata,Italian,False,2025-05-09,3,3.6,55+
+CUST_01055,52,Male,Bangalore,South Indian,True,2025-07-30,6,4.5,45-54
+CUST_01056,30,Male,Hyderabad,South Indian,False,2025-03-12,7,4.3,25-34
+CUST_01057,19,Male,Delhi,Mexican,False,2025-08-01,1,4.7,18-24
+CUST_01058,39,Male,Chennai,Italian,False,2025-08-10,2,5.0,35-44
+CUST_01059,22,Female,Ahmedabad,Indian,True,2025-08-27,4,4.1,18-24
+CUST_01060,30,Female,Mumbai,South Indian,False,2025-12-03,4,4.1,25-34
+CUST_01061,52,Male,Delhi,Italian,False,2025-06-01,3,3.3,45-54
+CUST_01062,27,Female,Bangalore,South Indian,True,2025-01-03,4,3.9,25-34
+CUST_01063,62,Male,Mumbai,South Indian,False,2025-10-11,6,3.1,55+
+CUST_01064,33,Male,Mumbai,Indian,False,2025-05-29,4,3.3,25-34
+CUST_01065,40,Male,Chennai,Chinese,False,2025-05-14,3,4.3,35-44
+CUST_01066,32,Female,Pune,Thai,False,2025-09-14,6,3.5,25-34
+CUST_01067,64,Male,Pune,Continental,True,2025-06-28,7,3.9,55+
+CUST_01068,48,Male,Delhi,Italian,False,2025-04-23,3,4.6,45-54
+CUST_01069,50,Male,Bangalore,Chinese,False,2025-01-27,2,4.1,45-54
+CUST_01070,58,Male,Kolkata,Mexican,False,2025-05-15,3,4.7,55+
+CUST_01071,41,Female,Delhi,Thai,True,2025-01-16,4,3.5,35-44
+CUST_01072,59,Female,Mumbai,Thai,False,2026-01-02,7,4.2,55+
+CUST_01073,32,Male,Bangalore,Italian,False,2025-09-01,3,3.6,25-34
+CUST_01074,56,Other,Delhi,South Indian,False,2025-11-28,3,4.3,55+
+CUST_01075,55,Female,Chennai,Thai,False,2025-01-17,5,3.7,55+
+CUST_01076,19,Male,Pune,Chinese,False,2025-06-28,1,4.0,18-24
+CUST_01077,52,Female,Ahmedabad,Indian,False,2025-09-29,8,4.2,45-54
+CUST_01078,19,Female,Hyderabad,South Indian,False,2025-02-23,0,4.7,18-24
+CUST_01079,51,Male,Kolkata,Chinese,False,2025-05-10,3,3.8,45-54
+CUST_01080,38,Male,Ahmedabad,Indian,False,2026-03-08,2,4.3,35-44
+CUST_01081,43,Female,Hyderabad,Continental,False,2026-06-23,4,3.1,35-44
+CUST_01082,22,Male,Hyderabad,Indian,True,2025-04-27,2,3.3,18-24
+CUST_01083,64,Female,Bangalore,Japanese,False,2025-03-07,3,4.7,55+
+CUST_01084,44,Female,Delhi,Italian,True,2026-05-03,3,4.9,35-44
+CUST_01085,25,Male,Bangalore,South Indian,False,2026-04-05,3,3.5,25-34
+CUST_01086,38,Female,Mumbai,Chinese,False,2026-01-06,6,4.3,35-44
+CUST_01087,46,Female,Mumbai,Chinese,False,2026-06-10,9,4.5,45-54
+CUST_01088,53,Male,Mumbai,Continental,False,2025-04-22,5,3.8,45-54
+CUST_01089,46,Male,Mumbai,Continental,False,2026-04-08,4,5.0,45-54
+CUST_01090,26,Male,Ahmedabad,Thai,True,2026-05-31,5,4.5,25-34
+CUST_01091,60,Female,Hyderabad,Thai,False,2025-08-15,3,3.4,55+
+CUST_01092,53,Male,Hyderabad,Chinese,False,2025-02-14,3,4.7,45-54
+CUST_01093,18,Male,Bangalore,Indian,True,2026-06-18,2,4.6,18-24
+CUST_01094,23,Female,Mumbai,Chinese,False,2025-11-05,6,3.1,18-24
+CUST_01095,54,Male,Kolkata,Mexican,False,2026-04-15,10,3.6,45-54
+CUST_01096,18,Male,Kolkata,Indian,False,2025-02-01,2,4.4,18-24
+CUST_01097,28,Male,Hyderabad,Thai,False,2025-03-04,4,3.4,25-34
+CUST_01098,27,Female,Bangalore,South Indian,False,2026-05-06,3,4.5,25-34
+CUST_01099,32,Male,Hyderabad,Italian,False,2026-02-16,8,4.0,25-34
+CUST_01100,21,Male,Delhi,Chinese,True,2026-03-13,8,5.0,18-24
+CUST_01101,58,Male,Bangalore,Italian,False,2025-04-21,10,3.5,55+
+CUST_01102,43,Male,Kolkata,Chinese,False,2026-05-18,4,3.3,35-44
+CUST_01103,21,Female,Hyderabad,South Indian,False,2026-03-31,6,3.6,18-24
+CUST_01104,52,Male,Mumbai,Indian,False,2025-03-17,7,4.0,45-54
+CUST_01105,36,Female,Mumbai,Continental,False,2025-03-24,2,4.5,35-44
+CUST_01106,54,Male,Mumbai,Mexican,False,2025-11-26,7,3.3,45-54
+CUST_01107,33,Female,Bangalore,Thai,False,2025-06-01,4,3.1,25-34
+CUST_01108,64,Male,Mumbai,Thai,False,2025-03-09,7,4.0,55+
+CUST_01109,26,Male,Delhi,Chinese,False,2025-05-10,3,4.3,25-34
+CUST_01110,50,Other,Hyderabad,Japanese,False,2025-10-09,8,3.6,45-54
+CUST_01111,58,Female,Kolkata,South Indian,False,2025-11-29,4,4.0,55+
+CUST_01112,31,Male,Delhi,Indian,True,2026-01-26,4,3.9,25-34
+CUST_01113,60,Male,Pune,Indian,False,2026-06-28,6,3.9,55+
+CUST_01114,35,Male,Kolkata,Thai,False,2025-10-29,4,3.7,35-44
+CUST_01115,23,Female,Mumbai,Thai,False,2026-04-10,4,3.9,18-24
+CUST_01116,61,Female,Kolkata,Italian,False,2026-06-02,1,4.2,55+
+CUST_01117,55,Male,Kolkata,Japanese,False,2026-03-17,2,3.0,55+
+CUST_01118,55,Male,Delhi,Indian,False,2025-04-12,3,4.8,55+
+CUST_01119,61,Female,Hyderabad,Thai,False,2025-04-28,2,4.9,55+
+CUST_01120,49,Female,Bangalore,Chinese,False,2025-08-09,5,4.6,45-54
+CUST_01121,47,Male,Delhi,Italian,False,2026-03-17,8,3.8,45-54
+CUST_01122,30,Female,Mumbai,Japanese,False,2026-04-08,3,3.1,25-34
+CUST_01123,58,Female,Chennai,Japanese,False,2025-08-22,6,4.0,55+
+CUST_01124,63,Male,Mumbai,Chinese,False,2026-02-28,5,3.3,55+
+CUST_01125,42,Female,Bangalore,Japanese,False,2025-12-14,3,4.1,35-44
+CUST_01126,30,Male,Hyderabad,South Indian,False,2026-04-10,2,4.6,25-34
+CUST_01127,59,Female,Hyderabad,Italian,False,2026-02-13,2,3.8,55+
+CUST_01128,38,Female,Mumbai,Mexican,False,2026-03-02,5,3.5,35-44
+CUST_01129,60,Female,Delhi,South Indian,False,2025-04-08,0,4.9,55+
+CUST_01130,37,Female,Hyderabad,Italian,False,2025-11-17,5,3.3,35-44
+CUST_01131,40,Female,Hyderabad,Italian,False,2026-03-14,0,4.0,35-44
+CUST_01132,59,Female,Chennai,Indian,False,2025-11-17,6,4.5,55+
+CUST_01133,64,Other,Delhi,South Indian,False,2025-09-19,3,3.5,55+
+CUST_01134,45,Male,Bangalore,Thai,False,2026-01-19,6,4.7,45-54
+CUST_01135,50,Female,Mumbai,Chinese,False,2025-06-06,3,4.3,45-54
+CUST_01136,33,Female,Bangalore,South Indian,False,2026-05-01,2,4.1,25-34
+CUST_01137,23,Female,Bangalore,South Indian,False,2025-03-10,7,4.4,18-24
+CUST_01138,45,Male,Bangalore,Thai,False,2025-04-04,6,4.7,45-54
+CUST_01139,23,Male,Kolkata,Continental,False,2025-03-29,6,3.3,18-24
+CUST_01140,24,Male,Kolkata,Thai,False,2025-04-06,6,4.6,18-24
+CUST_01141,26,Male,Delhi,Thai,False,2026-03-19,4,4.9,25-34
+CUST_01142,52,Male,Mumbai,South Indian,False,2025-04-09,5,3.7,45-54
+CUST_01143,36,Male,Ahmedabad,Mexican,False,2026-01-17,0,4.9,35-44
+CUST_01144,47,Male,Ahmedabad,Mexican,False,2025-05-14,5,4.8,45-54
+CUST_01145,30,Male,Mumbai,South Indian,False,2025-03-03,7,3.8,25-34
+CUST_01146,53,Other,Chennai,Thai,False,2025-12-04,1,3.6,45-54
+CUST_01147,48,Male,Mumbai,Chinese,True,2025-05-06,4,4.4,45-54
+CUST_01148,19,Male,Ahmedabad,Japanese,False,2026-02-25,3,3.3,18-24
+CUST_01149,20,Female,Chennai,South Indian,True,2025-12-29,3,4.2,18-24
+CUST_01150,43,Female,Hyderabad,Thai,False,2026-03-10,4,3.8,35-44
+CUST_01151,59,Male,Bangalore,Mexican,False,2025-02-22,7,4.8,55+
+CUST_01152,57,Male,Mumbai,Japanese,False,2025-10-22,5,3.4,55+
+CUST_01153,39,Female,Mumbai,Thai,False,2025-11-16,2,3.1,35-44
+CUST_01154,19,Female,Bangalore,Continental,False,2025-12-27,5,5.0,18-24
+CUST_01155,48,Male,Delhi,South Indian,False,2025-04-17,7,4.9,45-54
+CUST_01156,56,Female,Delhi,Mexican,False,2026-06-04,3,3.9,55+
+CUST_01157,55,Female,Mumbai,Indian,False,2025-08-06,5,4.0,55+
+CUST_01158,20,Female,Mumbai,Thai,False,2025-06-08,1,4.2,18-24
+CUST_01159,52,Male,Mumbai,Continental,False,2026-05-09,5,3.1,45-54
+CUST_01160,20,Female,Kolkata,Thai,False,2025-08-18,3,4.5,18-24
+CUST_01161,25,Female,Hyderabad,South Indian,True,2025-04-21,4,3.8,25-34
+CUST_01162,62,Male,Ahmedabad,South Indian,True,2025-12-25,6,3.5,55+
+CUST_01163,64,Male,Mumbai,Japanese,True,2026-01-12,2,4.2,55+
+CUST_01164,49,Female,Delhi,Japanese,False,2025-04-28,5,3.6,45-54
+CUST_01165,27,Female,Mumbai,Japanese,False,2025-10-13,3,3.1,25-34
+CUST_01166,33,Male,Mumbai,Thai,False,2025-08-20,4,3.2,25-34
+CUST_01167,50,Female,Kolkata,Indian,False,2026-03-16,3,3.7,45-54
+CUST_01168,46,Male,Pune,Japanese,False,2025-01-27,2,4.6,45-54
+CUST_01169,63,Male,Bangalore,Indian,False,2025-10-01,4,4.0,55+
+CUST_01170,34,Female,Kolkata,South Indian,False,2025-01-30,3,3.7,25-34
+CUST_01171,21,Female,Chennai,Italian,False,2025-07-04,3,3.3,18-24
+CUST_01172,47,Male,Mumbai,South Indian,False,2025-10-07,1,3.6,45-54
+CUST_01173,29,Male,Hyderabad,Italian,False,2025-11-13,6,3.5,25-34
+CUST_01174,58,Male,Delhi,Indian,False,2025-12-14,2,4.4,55+
+CUST_01175,55,Male,Chennai,Indian,False,2025-12-26,5,4.9,55+
+CUST_01176,62,Female,Mumbai,Chinese,False,2025-01-07,5,4.4,55+
+CUST_01177,24,Male,Chennai,South Indian,False,2025-07-05,3,3.6,18-24
+CUST_01178,49,Male,Bangalore,South Indian,True,2025-05-27,4,3.2,45-54
+CUST_01179,44,Male,Kolkata,Chinese,True,2026-02-15,3,4.8,35-44
+CUST_01180,26,Female,Ahmedabad,Mexican,False,2025-03-13,4,4.1,25-34
+CUST_01181,47,Male,Mumbai,Japanese,False,2025-05-26,6,4.7,45-54
+CUST_01182,56,Male,Delhi,Mexican,False,2025-02-01,2,4.3,55+
+CUST_01183,54,Female,Bangalore,Chinese,False,2025-04-04,5,4.2,45-54
+CUST_01184,21,Female,Mumbai,Italian,False,2026-06-28,5,3.9,18-24
+CUST_01185,19,Male,Pune,Thai,False,2025-08-09,7,3.2,18-24
+CUST_01186,31,Male,Hyderabad,Italian,False,2026-01-21,4,4.3,25-34
+CUST_01187,20,Male,Mumbai,Mexican,False,2026-03-06,5,3.4,18-24
+CUST_01188,27,Female,Mumbai,Continental,False,2026-04-10,5,4.8,25-34
+CUST_01189,49,Male,Delhi,Mexican,True,2025-12-16,8,3.9,45-54
+CUST_01190,52,Male,Mumbai,Indian,False,2025-06-11,3,3.6,45-54
+CUST_01191,34,Female,Bangalore,Continental,True,2026-01-14,3,4.8,25-34
+CUST_01192,29,Male,Delhi,Japanese,False,2025-11-16,3,4.0,25-34
+CUST_01193,47,Female,Mumbai,Indian,True,2025-11-29,6,3.7,45-54
+CUST_01194,41,Male,Mumbai,Thai,True,2025-03-28,7,3.4,35-44
+CUST_01195,57,Female,Hyderabad,Continental,True,2025-02-23,4,4.8,55+
+CUST_01196,29,Male,Mumbai,Mexican,True,2025-06-09,3,4.8,25-34
+CUST_01197,28,Female,Mumbai,Thai,False,2025-06-11,5,4.0,25-34
+CUST_01198,31,Male,Mumbai,Chinese,False,2025-02-20,2,4.4,25-34
+CUST_01199,21,Male,Chennai,Indian,False,2025-03-25,5,4.0,18-24
+CUST_01200,64,Male,Chennai,Japanese,False,2025-10-06,4,3.4,55+

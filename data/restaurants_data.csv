@@ -1,0 +1,141 @@
+Restaurant_ID,Restaurant_Name,Cuisine,Restaurant_Type,City,Avg_Delivery_Time,Restaurant_Rating,Is_Active
+REST_0002,Dragon WokPoint,Chinese,Cloud Kitchen,Ahmedabad,44,4.2,True
+REST_0003,Pasta PalaceHub,Italian,Casual Dining,Kolkata,39,3.5,True
+REST_0004,Taco TownHub,South Indian,Cloud Kitchen,Kolkata,42,4.8,True
+REST_0005,Thai GardenKitchen,Chinese,Cloud Kitchen,Mumbai,37,3.5,True
+REST_0006,The ContinentalHub,Indian,Cloud Kitchen,Hyderabad,44,4.0,True
+REST_0007,Sushi HubHub,South Indian,Casual Dining,Delhi,23,4.1,True
+REST_0008,Dosa CornerDeluxe,Thai,Fine Dining,Pune,52,4.7,True
+REST_0009,Biryani HouseExpress,Continental,Quick Service,Mumbai,37,4.6,True
+REST_0010,Pizza OvenKitchen,Continental,Cloud Kitchen,Bangalore,48,4.8,True
+REST_0011,Burger Joint,Japanese,Quick Service,Mumbai,29,4.2,True
+REST_0012,Curry LeafDeluxe,Thai,Fine Dining,Mumbai,25,3.5,True
+REST_0013,Noodle BarHub,Italian,Casual Dining,Mumbai,52,4.0,True
+REST_0014,Grill Station,Indian,Casual Dining,Mumbai,53,3.7,True
+REST_0015,Sweet TreatsDeluxe,Chinese,Cafe,Chennai,39,4.4,True
+REST_0016,Chai PointPoint,Continental,Quick Service,Ahmedabad,53,3.7,True
+REST_0017,Roll ExpressPoint,South Indian,Quick Service,Bangalore,27,4.0,True
+REST_0018,Kabab KingKitchen,South Indian,Casual Dining,Kolkata,36,4.7,True
+REST_0019,Ice Cream LabHub,Continental,Quick Service,Mumbai,52,4.8,True
+REST_0020,Sandwich ClubKitchen,Thai,Casual Dining,Chennai,29,4.4,True
+REST_0023,Pasta Palace,Continental,Casual Dining,Kolkata,45,3.4,True
+REST_0024,Taco TownExpress,Indian,Quick Service,Hyderabad,49,4.3,True
+REST_0025,Thai GardenHub,Mexican,Fine Dining,Bangalore,42,3.9,True
+REST_0027,Sushi Hub,Japanese,Casual Dining,Ahmedabad,45,4.1,True
+REST_0028,Dosa Corner,Thai,Casual Dining,Kolkata,44,4.0,True
+REST_0029,Biryani HouseExpress,Thai,Fine Dining,Delhi,47,4.6,True
+REST_0030,Pizza OvenDeluxe,South Indian,Casual Dining,Hyderabad,31,4.2,True
+REST_0031,Burger JointExpress,South Indian,Cafe,Bangalore,44,3.3,True
+REST_0032,Curry LeafExpress,Japanese,Cafe,Delhi,24,3.5,True
+REST_0033,Noodle BarDeluxe,Italian,Quick Service,Kolkata,26,4.3,True
+REST_0034,Grill StationDeluxe,Thai,Quick Service,Kolkata,41,3.3,True
+REST_0035,Sweet TreatsDeluxe,Italian,Fine Dining,Mumbai,31,3.7,True
+REST_0037,Roll Express,South Indian,Cloud Kitchen,Ahmedabad,27,3.7,True
+REST_0038,Kabab KingHub,Indian,Cloud Kitchen,Kolkata,31,3.5,True
+REST_0039,Ice Cream LabPoint,Japanese,Casual Dining,Hyderabad,51,4.8,True
+REST_0040,Sandwich ClubHub,South Indian,Quick Service,Hyderabad,54,3.8,True
+REST_0041,Spice RouteExpress,Indian,Quick Service,Delhi,35,4.5,True
+REST_0042,Dragon WokExpress,Chinese,Quick Service,Kolkata,29,4.7,True
+REST_0044,Taco TownKitchen,Thai,Casual Dining,Pune,41,3.2,True
+REST_0045,Thai GardenPoint,Italian,Quick Service,Chennai,53,4.8,True
+REST_0046,The ContinentalExpress,Japanese,Quick Service,Hyderabad,53,3.3,True
+REST_0047,Sushi HubKitchen,Continental,Casual Dining,Pune,26,3.3,True
+REST_0048,Dosa CornerKitchen,Italian,Quick Service,Delhi,49,4.8,True
+REST_0050,Pizza OvenDeluxe,Mexican,Cloud Kitchen,Ahmedabad,29,4.0,True
+REST_0051,Burger Joint,Indian,Cloud Kitchen,Delhi,36,3.4,True
+REST_0052,Curry LeafHub,Thai,Cloud Kitchen,Bangalore,37,3.8,True
+REST_0053,Noodle BarPoint,Japanese,Quick Service,Ahmedabad,37,4.0,True
+REST_0054,Grill Station,South Indian,Cloud Kitchen,Hyderabad,29,4.4,True
+REST_0055,Sweet TreatsHub,Indian,Cafe,Chennai,43,3.9,True
+REST_0056,Chai Point,Chinese,Cloud Kitchen,Pune,26,3.3,True
+REST_0057,Roll ExpressHub,Italian,Quick Service,Bangalore,23,4.5,True
+REST_0058,Kabab King,Japanese,Casual Dining,Chennai,43,4.5,True
+REST_0059,Ice Cream LabDeluxe,Japanese,Quick Service,Chennai,32,4.5,True
+REST_0060,Sandwich ClubKitchen,Indian,Quick Service,Kolkata,23,3.6,True
+REST_0061,Spice RouteHub,South Indian,Fine Dining,Chennai,36,4.4,True
+REST_0062,Dragon WokKitchen,Japanese,Casual Dining,Chennai,21,3.6,True
+REST_0063,Pasta PalaceHub,Continental,Quick Service,Kolkata,38,4.3,True
+REST_0065,Thai GardenPoint,Mexican,Casual Dining,Mumbai,44,4.4,True
+REST_0066,The ContinentalHub,Continental,Quick Service,Hyderabad,30,3.8,True
+REST_0067,Sushi HubDeluxe,Mexican,Quick Service,Bangalore,37,3.2,True
+REST_0068,Dosa Corner,Indian,Quick Service,Chennai,45,3.6,True
+REST_0069,Biryani HouseHub,Indian,Casual Dining,Pune,24,3.5,True
+REST_0070,Pizza Oven,Thai,Fine Dining,Chennai,44,4.5,True
+REST_0071,Burger JointDeluxe,Indian,Quick Service,Hyderabad,36,3.3,True
+REST_0072,Curry LeafExpress,South Indian,Quick Service,Chennai,47,4.8,True
+REST_0073,Noodle BarKitchen,Italian,Cafe,Kolkata,41,3.3,True
+REST_0074,Grill StationHub,Continental,Casual Dining,Chennai,52,3.7,True
+REST_0075,Sweet TreatsPoint,Indian,Casual Dining,Ahmedabad,22,3.9,True
+REST_0076,Chai PointDeluxe,Continental,Casual Dining,Kolkata,33,3.2,True
+REST_0077,Roll Express,Italian,Fine Dining,Mumbai,40,4.2,True
+REST_0078,Kabab KingHub,Italian,Casual Dining,Delhi,29,3.6,True
+REST_0079,Ice Cream Lab,Mexican,Cafe,Bangalore,42,3.3,True
+REST_0080,Sandwich ClubExpress,Thai,Quick Service,Pune,41,4.3,True
+REST_0081,Spice RouteHub,Japanese,Casual Dining,Bangalore,43,3.4,True
+REST_0082,Dragon WokKitchen,Continental,Cloud Kitchen,Mumbai,31,3.3,True
+REST_0083,Pasta PalaceHub,Chinese,Fine Dining,Bangalore,50,4.3,True
+REST_0084,Taco TownKitchen,Chinese,Quick Service,Mumbai,50,4.2,True
+REST_0085,Thai Garden,Mexican,Fine Dining,Kolkata,22,4.2,True
+REST_0086,The ContinentalHub,South Indian,Quick Service,Kolkata,47,4.7,True
+REST_0087,Sushi HubDeluxe,Chinese,Casual Dining,Kolkata,37,3.9,True
+REST_0088,Dosa CornerPoint,Chinese,Quick Service,Delhi,45,3.5,True
+REST_0089,Biryani HouseDeluxe,Thai,Quick Service,Delhi,20,4.6,True
+REST_0090,Pizza OvenExpress,Thai,Cloud Kitchen,Ahmedabad,23,3.8,True
+REST_0091,Burger JointDeluxe,Chinese,Cloud Kitchen,Pune,52,4.3,True
+REST_0092,Curry LeafExpress,Italian,Quick Service,Kolkata,32,4.2,True
+REST_0093,Noodle Bar,Continental,Fine Dining,Ahmedabad,20,3.6,True
+REST_0094,Grill StationKitchen,Italian,Casual Dining,Mumbai,47,4.4,True
+REST_0095,Sweet TreatsPoint,Chinese,Cloud Kitchen,Pune,31,4.4,True
+REST_0096,Chai Point,South Indian,Casual Dining,Delhi,20,3.8,True
+REST_0097,Roll ExpressKitchen,Chinese,Casual Dining,Ahmedabad,26,3.8,True
+REST_0098,Kabab KingKitchen,Chinese,Cloud Kitchen,Mumbai,28,3.7,True
+REST_0099,Ice Cream LabExpress,Mexican,Cafe,Hyderabad,28,3.6,True
+REST_0100,Sandwich ClubDeluxe,Mexican,Quick Service,Kolkata,28,3.5,True
+REST_0101,Spice RouteDeluxe,Japanese,Quick Service,Chennai,35,4.5,True
+REST_0102,Dragon WokPoint,Italian,Cloud Kitchen,Chennai,36,4.2,True
+REST_0103,Pasta PalacePoint,South Indian,Quick Service,Mumbai,21,4.6,True
+REST_0104,Taco TownExpress,Chinese,Quick Service,Delhi,43,3.5,True
+REST_0105,Thai GardenExpress,Thai,Cafe,Delhi,43,4.8,True
+REST_0106,The Continental,Italian,Cloud Kitchen,Bangalore,29,4.9,True
+REST_0107,Sushi HubExpress,Mexican,Cloud Kitchen,Bangalore,24,3.7,True
+REST_0108,Dosa CornerDeluxe,Indian,Fine Dining,Ahmedabad,42,4.8,True
+REST_0109,Biryani HouseExpress,Continental,Fine Dining,Kolkata,28,3.7,True
+REST_0110,Pizza OvenExpress,Italian,Fine Dining,Chennai,50,4.9,True
+REST_0111,Burger JointKitchen,Chinese,Cafe,Hyderabad,34,3.6,True
+REST_0112,Curry LeafExpress,Thai,Cloud Kitchen,Pune,35,3.5,True
+REST_0113,Noodle BarPoint,South Indian,Quick Service,Chennai,48,3.7,True
+REST_0114,Grill Station,Japanese,Casual Dining,Kolkata,40,4.1,True
+REST_0115,Sweet TreatsExpress,Thai,Casual Dining,Kolkata,53,4.6,True
+REST_0116,Chai PointPoint,Chinese,Casual Dining,Delhi,39,3.9,True
+REST_0117,Roll ExpressHub,South Indian,Quick Service,Hyderabad,50,4.9,True
+REST_0118,Kabab KingHub,Indian,Casual Dining,Chennai,33,3.4,True
+REST_0120,Sandwich ClubKitchen,South Indian,Casual Dining,Bangalore,24,3.4,True
+REST_0121,Spice RouteHub,Italian,Cloud Kitchen,Mumbai,21,3.4,True
+REST_0122,Dragon WokPoint,Continental,Cafe,Bangalore,28,4.6,True
+REST_0123,Pasta PalaceKitchen,Chinese,Cafe,Pune,41,3.6,True
+REST_0124,Taco TownPoint,Chinese,Casual Dining,Ahmedabad,31,4.8,True
+REST_0125,Thai GardenPoint,Chinese,Quick Service,Chennai,27,4.8,True
+REST_0127,Sushi HubDeluxe,Thai,Fine Dining,Delhi,29,4.5,True
+REST_0128,Dosa CornerPoint,Continental,Quick Service,Delhi,23,4.1,True
+REST_0129,Biryani HouseDeluxe,Mexican,Quick Service,Ahmedabad,36,4.4,True
+REST_0130,Pizza OvenExpress,Continental,Casual Dining,Bangalore,35,3.7,True
+REST_0131,Burger JointHub,South Indian,Casual Dining,Ahmedabad,41,4.7,True
+REST_0132,Curry Leaf,Chinese,Casual Dining,Kolkata,32,3.7,True
+REST_0133,Noodle BarHub,Indian,Cafe,Bangalore,32,4.4,True
+REST_0134,Grill StationHub,Chinese,Cloud Kitchen,Mumbai,21,3.5,True
+REST_0135,Sweet TreatsPoint,Chinese,Quick Service,Mumbai,20,3.6,True
+REST_0136,Chai PointDeluxe,Italian,Cloud Kitchen,Kolkata,30,4.8,True
+REST_0137,Roll ExpressDeluxe,Indian,Quick Service,Delhi,30,4.0,True
+REST_0138,Kabab KingKitchen,Chinese,Cloud Kitchen,Pune,53,4.0,True
+REST_0139,Ice Cream Lab,South Indian,Quick Service,Ahmedabad,37,3.9,True
+REST_0140,Sandwich ClubDeluxe,Italian,Cloud Kitchen,Ahmedabad,50,4.5,True
+REST_0141,Spice RouteKitchen,Continental,Quick Service,Mumbai,33,4.6,True
+REST_0142,Dragon Wok,Thai,Quick Service,Ahmedabad,30,4.8,True
+REST_0143,Pasta PalaceDeluxe,Continental,Quick Service,Ahmedabad,23,4.7,True
+REST_0144,Taco TownHub,Japanese,Cloud Kitchen,Ahmedabad,46,3.6,True
+REST_0145,Thai GardenHub,Mexican,Casual Dining,Chennai,28,3.8,True
+REST_0146,The Continental,South Indian,Fine Dining,Pune,32,4.1,True
+REST_0147,Sushi Hub,South Indian,Cafe,Chennai,32,3.7,True
+REST_0148,Dosa CornerDeluxe,Chinese,Cloud Kitchen,Chennai,28,4.7,True
+REST_0149,Biryani HouseDeluxe,Mexican,Quick Service,Mumbai,36,4.7,True
+REST_0150,Pizza Oven,Continental,Cloud Kitchen,Ahmedabad,35,4.5,True
