@@ -221,7 +221,6 @@ This project is licensed under the MIT License — see [LICENSE](LICENSE) file.
 
 ---
 
-> **Built with passion for data-driven decision making in FoodTech.**
 > 
 > ## Author ##
 >  Hownidh Pallapuneni 
