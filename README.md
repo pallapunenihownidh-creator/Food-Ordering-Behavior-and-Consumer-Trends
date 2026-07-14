@@ -221,10 +221,10 @@ This project is licensed under the MIT License — see [LICENSE](LICENSE) file.
 
 ---
 
-> 
-> ## Author ##
->  Hownidh Pallapuneni 
->  Anuhya Vadlamudi 
->  Dhana Lakshmi Pillakatupula 
->  Amila Pattan 
->  Nandini Gamidi 
+
+  ## Author 
+  Hownidh Pallapuneni 
+  Anuhya Vadlamudi 
+  Dhana Lakshmi Pillakatupula 
+  Amila Pattan 
+  Nandini Gamidi 
