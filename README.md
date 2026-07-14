@@ -223,4 +223,9 @@ This project is licensed under the MIT License — see [LICENSE](LICENSE) file.
 
 > **Built with passion for data-driven decision making in FoodTech.**
 > 
-> *"In God we trust. All others must bring data."* — W. Edwards Deming
+> ## Author ##
+> ** Hownidh Pallapuneni **
+> ** Anuhya Vadlamudi **
+> ** Dhana Lakshmi Pillakatupula **
+> ** Amila Pattan **
+> ** Nandini Gamidi **
